@@ -1,7 +1,16 @@
-.container__section-one
+.container__section-one.section-main
+  background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg1.jpg')
+.container__section-two.section-main
+  background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg2smallerSize.jpg')
+.container__section-three.section-main
+  background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/bg3.jpg')
+  & > *
+    margin-left: 60%
+    text-transform: uppercase
+  button
+    margin-bottom: 12%
+.section-main
   height: 100vh
-  margin-top: calc(-8vh - 1rem)
-  background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg2.jpg')
   background-position: center
   background-size: cover
   background-repeat: no-repeat
@@ -32,7 +41,7 @@
     text-transform: uppercase
     cursor: pointer
     transition: color .2s cubic-bezier(.25,1,.25,1)
-    z-index: 2
+    z-index: 0
     &::after
       position: absolute
       content: ''
