@@ -1,0 +1,52 @@
+.container__section-one
+  height: 100vh
+  margin-top: calc(-8vh - 1rem)
+  background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg2.jpg')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  color: #fff
+  & > *
+    margin-left: 15%
+    text-transform: uppercase
+  h2
+    font-size: 5rem
+    font-weight: 700
+  h3
+    font-size: 2.2rem
+    font-weight: 400
+  &__button
+    position: relative
+    height: 6rem
+    width: 16rem
+    margin-top: 4rem
+    background-color: transparent
+    color: #fff
+    border: .2rem solid #fff
+    font-size: 1.4rem
+    font-weight: bold
+    text-transform: uppercase
+    cursor: pointer
+    transition: color .2s cubic-bezier(.25,1,.25,1)
+    z-index: 2
+    &::after
+      position: absolute
+      content: ''
+      height: 100%
+      width: 100%
+      background-color: #fff
+      bottom: 0
+      left: 0
+      transform: scaleY(0)
+      transform-origin: 50% 0%
+      transition: transform .4s cubic-bezier(.25,1,.25,1)
+      z-index: -1
+    &:hover::after
+      transform: scaleY(1)
+      transform-origin: 50% 100%
+    &:hover
+      color: #000
