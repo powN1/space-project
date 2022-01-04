@@ -32,57 +32,61 @@ header
       justify-content: space-evenly
       list-style: none
       &__element
-        position: relative
         display: flex
         justify-content: center
         align-items: center
-        cursor: pointer
-        overflow: hidden
-        margin-top: .3rem
-        padding-bottom: .3rem
-        &:after
-          content: ''
-          position: absolute
-          width: 100%
-          transform: scaleX(0)
-          height: .1rem
-          bottom: 0
-          left: 0
-          background-color: #fff
-          transform-origin: bottom right
-          transition: transform 0.3s cubic-bezier(.19,1,.22,1)
-        &:hover:after
-          transform: scaleX(1)
-          transform-origin: bottom left
+        a
+          position: relative
+          margin-top: .3rem
+          padding-bottom: .3rem
+          overflow: hidden
+          text-decoration: none
+          color: #fff
+          &:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: .1rem
+            transform: scaleX(0)
+            bottom: 0
+            left: 0
+            background-color: #fff
+            transform-origin: bottom right
+            transition: transform 0.3s cubic-bezier(.19,1,.22,1)
+          &:hover:after
+            transform: scaleX(1)
+            transform-origin: bottom left
   .header__right-content
     display: flex
     align-items: center
     justify-content: center
     margin: 0 3rem 0 auto
   .header__shop
-    position: relative
     flex-basis: 50%
     display: flex
-    justify-content: flex-end
+    justify-content: flex-start
     align-items: center
     margin-right: 2rem
-    margin-top: .3rem
-    padding-bottom: .3rem
-    cursor: pointer
-    &:after
-      content: ''
-      position: absolute
-      width: 100%
-      transform: scaleX(0)
-      height: .1rem
-      bottom: 0
-      left: 0
-      background-color: #fff
-      transform-origin: bottom right
-      transition: transform 0.3s cubic-bezier(.19,1,.22,1)
-    &:hover:after
-      transform: scaleX(1)
-      transform-origin: bottom left
+    a
+      position: relative
+      margin-top: .3rem
+      padding-bottom: .3rem
+      text-decoration: none
+      color: #fff
+      &:after
+        content: ''
+        position: absolute
+        width: 100%
+        transform: scaleX(0)
+        height: .1rem
+        bottom: 0
+        left: 0
+        background-color: #fff
+        transform-origin: bottom right
+        transition: transform 0.3s cubic-bezier(.19,1,.22,1)
+      &:hover:after
+        transform: scaleX(1)
+        transform-origin: bottom left
   .header__hamburget-button
     flex-basis: 50%
     display: flex
@@ -96,6 +100,7 @@ header
     cursor: pointer
     font-size: 1.5rem
     cursor: pointer
+    z-index: 2
     i
       display: flex
       justify-content: center
