@@ -60,16 +60,13 @@ header
             transform: scaleX(1)
             transform-origin: bottom left
   .header__right-content
-    display: flex
-    align-items: center
-    justify-content: center
-    margin: 0 3rem 0 auto
-  .header__shop
-    flex-basis: 50%
-    display: flex
-    justify-content: flex-start
-    align-items: center
-    margin-right: 2rem
+    margin-left: auto
+    margin-right: 7rem
+    &__shop
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
     a
       position: relative
       margin-top: .3rem
@@ -90,24 +87,47 @@ header
       &:hover:after
         transform: scaleX(1)
         transform-origin: bottom left
-  .header__hamburger-button
+.container__hamburger
+  position: fixed
+  top: 0
+  right: 0
+  height: 8vh
+  margin: 1rem 3rem 0 0
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #fff
+  background-color: transparent
+  border: none
+  z-index: 3
+  font-size: 1.5rem
+  &__button
+    height: 1.4rem
+    width: 1.4rem
     position: relative
-    z-index: 999
-    flex-basis: 50%
     display: flex
-    justify-content: center
-    align-items: center
-    height: 2rem
-    width: 2rem
-    color: #fff
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    transition: 250ms ease-out
     background-color: transparent
     border: none
     cursor: pointer
-    font-size: 1.5rem
-    cursor: pointer
-    i
-      display: flex
-      justify-content: center
-      align-items: center
+    .line
+      height: .2rem
       width: 100%
-      height: 100%
+      background: #fff
+      display: block
+      border-radius: 5px
+      transition: 250ms ease-out
+  &__button.open .line.first
+    transform: rotate(45deg) translateX(.14rem)
+    transform-origin: left
+    background: #fff
+  &__button.open .line.third
+    transform: rotate(-45deg) translateX(.14rem)
+    transform-origin: left
+    background: #fff
+  &__button.open .line.second
+    opacity: 0
+    width: 0

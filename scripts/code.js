@@ -3,7 +3,7 @@ const asideMenu = document.querySelector('[data-aside-menu]');
 const modal = document.querySelector('[data-modal]');
 
 btnHamburger.addEventListener('click', function(){
-  asideMenu.classList.toggle('hide');
+  btnHamburger.classList.toggle('open');
   asideMenu.classList.toggle('slide');
-  modal.classList.toggle('hide-modal');
+  modal.classList.toggle('hide');
 })

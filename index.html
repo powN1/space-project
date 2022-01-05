@@ -23,11 +23,17 @@
         </ul>
       </nav>
       <div class="header__right-content">
-        <div class="header__shop"><a href="#">Shop</a></div>
-        <button class="header__hamburger-button" data-hamburger-button><i class="fa fa-bars"></i></button>
+        <div class="header__right-content__shop"><a href="#">Shop</a></div>
       </div>
     </header>
-    <aside class="hide" data-aside-menu>
+    <div class="container__hamburger">
+      <button class="container__hamburger__button" data-hamburger-button>
+        <span class="line first"></span>
+        <span class="line second"></span>
+        <span class="line third"></span>
+      </button>
+    </div>
+    <aside data-aside-menu>
       <ul>
         <li><a href="#">Missions</a></li>
         <li><a href="#">Launches</a></li>
@@ -62,7 +68,7 @@
         <li><a href="#">privacy policy</a></li>
       </ul>
     </footer>
-    <div class="modal hide-modal" data-modal></div>
+    <div class="modal hide" data-modal></div>
   </div>
   <script src="../scripts/code.js"></script>
 </body>
