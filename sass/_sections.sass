@@ -1,9 +1,27 @@
 .container__section-one.section-main
   background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg1.jpg')
+  h3
+    animation: text-animation $animation-time ease
+  h2
+    animation: opacity-animation $animation-time ease
+  button
+    animation: opacity-animation $animation-time ease
 .container__section-two.section-main
   background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg2smallerSize.jpg')
+  h3
+    opacity: 0
+  h2
+    opacity: 0
+  button
+    opacity: 0
 .container__section-three.section-main
   background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/bg3.jpg')
+  h3
+    opacity: 0
+  h2
+    opacity: 0
+  button
+    opacity: 0
   & > *
     margin-left: 60%
     text-transform: uppercase
@@ -59,3 +77,26 @@
       transform-origin: 50% 100%
     &:hover
       color: #000
+@keyframes text-animation
+  0%
+    padding-top: 10rem
+    opacity: 0
+  100%
+    padding-top: 0
+    opacity: 1
+@keyframes text-animation2
+  0%
+    padding-top: 20rem
+    opacity: 0
+  100%
+    padding-top: 0
+    opacity: 1
+@keyframes opacity-animation
+  0%
+    opacity: 0
+  100%
+    opacity: 100%
+.animation1
+  animation: text-animation $animation-time ease forwards
+.animation2
+  animation: opacity-animation $animation-time ease forwards
