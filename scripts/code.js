@@ -15,6 +15,12 @@ btnHamburger.addEventListener('click', function(){
 })
 
 window.addEventListener('scroll', function() {
+  modal.style.top = `${window.scrollY}px`
+  if(btnHamburger.classList.contains('open')) {
+    btnHamburger.classList.toggle('open');
+    asideMenu.classList.toggle('slide');
+    modal.classList.toggle('hide');
+  }
   if((window.scrollY + section1.offsetHeight >= section3.offsetTop + section3.offsetHeight / 2) && !sectionThreeState) {
     if(sectionThreeState) return
     section3.querySelector('h3').classList.toggle('animation1');

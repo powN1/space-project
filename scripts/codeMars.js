@@ -16,6 +16,7 @@ const spanSeconds = document.querySelector('.mars__container__section-three__sec
 let missionDate = new Date('2026-06-26 10:00:00').getTime();
 
 const updateDate = function() {
+  // Countdown timer
   let currentDate = new Date().getTime();
   let gap = missionDate - currentDate;
 
@@ -43,13 +44,22 @@ let sectionThreeMarsState = false;
 let sectionFourMarsState = false;
 let lastScrollPosition = 0;
 
+
 btnHamburger.addEventListener('click', function(){
   btnHamburger.classList.toggle('open');
   asideMenu.classList.toggle('slide');
   modal.classList.toggle('hide');
+
 })
 
 window.addEventListener('scroll', function() {
+  modal.style.top = `${window.scrollY}px`;
+  if(btnHamburger.classList.contains('open')) {
+    btnHamburger.classList.toggle('open');
+    asideMenu.classList.toggle('slide');
+    modal.classList.toggle('hide');
+  }
+
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if(scrollTop > lastScrollPosition) {
     header.style.opacity = '0';
@@ -64,4 +74,5 @@ window.addEventListener('scroll', function() {
     section2Mars.querySelector('.mars__container__section-two__content-container__parameters').classList.toggle('animation2');
     sectionTwoMarsState = true
   }
+
 })
