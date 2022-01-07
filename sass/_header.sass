@@ -25,7 +25,7 @@ header
     background-repeat: no-repeat
     cursor: pointer
   nav
-    flex-basis: 45%
+    flex-basis: 35%
     height: 100%
     .nav__list
       width: 100%
@@ -57,6 +57,9 @@ header
           &:hover:after
             transform: scaleX(1)
             transform-origin: bottom left
+          &:focus:after
+            transform: scaleX(1)
+            transform-origin: bottom left
   .header__right-content
     margin-left: auto
     margin-right: 7rem
@@ -80,6 +83,9 @@ header
         transform-origin: bottom right
         transition: transform 0.3s cubic-bezier(.19,1,.22,1)
       &:hover:after
+        transform: scaleX(1)
+        transform-origin: bottom left
+      &:focus:after
         transform: scaleX(1)
         transform-origin: bottom left
 .container__hamburger

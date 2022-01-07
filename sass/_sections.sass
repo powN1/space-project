@@ -77,8 +77,13 @@
     text-transform: uppercase
   button
     margin-bottom: 12%
+
+/* =============================
+ Mars page selectors (2nd page)
+ ============================ */
+
 .mars__container__section-one
-  background-image: linear-gradient(rgba(4,9,30,.2)),url('../img/mars.jpg')
+  background-image: linear-gradient(rgba(4,9,30,.25)),url('../img/mars.jpg')
   align-items: center
   row-gap: 2rem
   h1
@@ -208,6 +213,11 @@
       transform-origin: 50% 100%
     &:hover
       color: #000
+
+/* =============================
+ News page selectors (3rd page)
+ ============================ */
+
 .news__container__section-one
   position: relative
   height: 60vh
@@ -361,7 +371,7 @@
   height: 45vh
   background-color: #000
   align-items: center
-  border-top: .1rem solid rgba(255, 255, 255, .25)
+  border-top: .1rem solid rgba(255, 255, 255, .15)
   & > *
     margin: 0
   &__subscribe-container
@@ -464,6 +474,261 @@
   background-image: url('../img/news5.jpg')
 .news6img
   background-image: url('../img/news6.jpg')
+
+/* =============================
+ News page selectors (4th page)
+ ============================ */
+.careers__container__section-one
+  background-image: linear-gradient(rgba(0,0,0,0.45)),url('../img/bg6.jpg')
+  +flex-column-center
+  row-gap: 4rem
+  & > *
+    margin: 0
+  h1
+    font-size: 5.5rem
+    width: 50%
+    text-align: center
+    text-shadow: .2rem .2rem rgba(0,0,0,.3)
+  p
+    font-size: 2rem
+    line-height: 3.4rem
+    width: 50%
+    text-transform: none
+    text-shadow: .2rem .2rem rgba(0,0,0,.3)
+    text-align: justify
+    text-align-last: center
+  &__buttons-container
+    width: 25%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 1rem
+    &__button
+      position: relative
+      height: 6rem
+      width: 45%
+      background-color: transparent
+      color: #fff
+      border: .2rem solid #fff
+      font-size: 1.4rem
+      font-weight: bold
+      text-transform: uppercase
+      cursor: pointer
+      transition: color .2s cubic-bezier(.25,1,.25,1)
+      z-index: 0
+      &::after
+        position: absolute
+        content: ''
+        height: 100%
+        width: 100%
+        background-color: #fff
+        bottom: 0
+        left: 0
+        transform: scaleY(0)
+        transform-origin: 50% 0%
+        transition: transform .4s cubic-bezier(.25,1,.25,1)
+        z-index: -1
+      &:hover::after
+        transform: scaleY(1)
+        transform-origin: 50% 100%
+      &:hover
+        color: #000
+.careers__container__section-two
+  height: 50vh
+  background-color: #000
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  row-gap: 2rem
+  & > *
+    margin: 0
+  h2
+    font-size: 4.5rem
+    width: 50%
+    text-align-last: center
+  p
+    font-size: 1.8rem
+    line-height: 2.8rem
+    width: 50%
+    text-align: justify
+    text-align-last: center
+    text-transform: none
+.careers__container__section-three
+  background-color: #000
+  height: auto
+  +flex-column-center
+  justify-content: flex-start
+  border-top: .1rem solid rgba(255, 255, 255, .15)
+  padding-top: 5rem
+  row-gap: 2rem
+  & > *
+    margin: 0
+  & > p
+    font-size: 1.8rem
+  & > h3
+    font-size: 4rem
+    font-weight: bold
+    text-transform: none
+    margin-bottom: 3rem
+  &__facilities-container
+    width: 60%
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+    // align-items: stretch
+    row-gap: 3rem
+    margin-bottom: 6rem
+    &__facility
+      flex-basis: 49%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      row-gap: 2.5rem
+      border: .1rem solid rgba(255, 255, 255, .15)
+      padding-bottom: 3rem
+      &__img
+        width: 100%
+        height: 35rem
+        background-size: cover
+        background-position: center
+        background-repear: no-repeat
+      h3
+        font-size: 4rem
+        font-weight: bold
+        padding: 0 3rem
+        text-transform: none
+        span
+          text-transform: uppercase
+      p
+        font-size: 1.8rem
+        line-height: 2.6rem
+        text-transform: none
+        text-align: justify
+        padding: 0 3rem
+        margin-top: -.5rem
+.careers-img1
+  background-image: url(../img/careers1.jpg)
+.careers-img2
+  background-image: url(../img/careers2.jpg)
+.careers-img3
+  background-image: url(../img/careers3.jpg)
+.careers-img4
+  background-image: url(../img/careers4.jpg)
+.careers-img5
+  background-image: url(../img/careers5.jpg)
+.careers-img6
+  background-image: url(../img/careers6.jpg)
+
+.careers__container__section-four
+  height: 75vh
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-start
+  background-color: #000
+  & > *
+    margin: 0
+  &__img
+    height: 100%
+    flex-basis: 43%
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+  &__container
+    flex-basis: 57%
+    height: 60%
+    margin: auto 0
+    +flex-column-center
+    align-items: center
+    justify-content: space-between
+    h3
+      width: 50%
+      text-transform: none
+      font-size: 3.5rem
+      line-height: 5rem
+      font-weight: bold
+    p
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      column-gap: 2rem
+      width: 50%
+      font-size: 1.8rem
+      color: rgba(255, 255, 255, .7)
+      span:first-child
+        display: block
+        width: 4%
+        height: .5rem
+        background-color: #c23
+    &__button-container
+      display: flex
+      justify-content: space-between
+      column-gap: 2rem
+      button
+        padding: 1.5rem
+        background-color: transparent
+        border-radius: 50%
+        border: .2rem solid #c23
+        cursor: pointer
+        i
+          +flex-row-center
+          color: #ccc
+          font-size: 1.6rem
+.careers__container__section-five
+  height: 60vh
+  background-color: #000
+  +flex-column-center
+  row-gap: 2.5rem
+  padding: 5rem 0
+  & > *
+    margin: 0
+  p:first-of-type
+    font-size: 2rem
+  h3
+    font-size: 4.5rem
+    text-transform: none
+    font-weight: bold
+  p:nth-of-type(2)
+    font-size: 1.8rem
+    line-height: 2.8rem
+    text-transform: none
+    width: 60%
+    text-align: justify
+  button
+    position: relative
+    height: 6rem
+    width: 15%
+    margin-top: 2rem
+    background-color: transparent
+    color: #fff
+    border: .2rem solid #fff
+    font-size: 1.4rem
+    font-weight: bold
+    text-transform: uppercase
+    cursor: pointer
+    transition: color .2s cubic-bezier(.25,1,.25,1)
+    z-index: 0
+    &::after
+      position: absolute
+      content: ''
+      height: 100%
+      width: 100%
+      background-color: #fff
+      bottom: 0
+      left: 0
+      transform: scaleY(0)
+      transform-origin: 50% 0%
+      transition: transform .4s cubic-bezier(.25,1,.25,1)
+      z-index: -1
+    &:hover::after
+      transform: scaleY(1)
+      transform-origin: 50% 100%
+    &:hover
+      color: #000
+
 @keyframes text-animation
   0%
     padding-top: 10rem
