@@ -57,7 +57,7 @@
   button
     animation: opacity-animation $animation-time ease
 .container__section-two.section-main
-  background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg2smallerSize.jpg')
+  background-image: linear-gradient(rgba(4,9,30,.4)),url('../img/bg2.jpg')
   h3
     opacity: 0
   h2
@@ -154,10 +154,7 @@
     justify-content: space-between
     div
       height: 100%
-      display: flex
-      flex-direction: column
-      align-items: center
-      justify-content: center
+      +flex-column-center
       span:first-child
         font-size: 7rem
       span:last-child
@@ -212,12 +209,22 @@
     &:hover
       color: #000
 .news__container__section-one
+  position: relative
   height: 60vh
   background-image: linear-gradient(rgba(0,0,0,0.5)),url('../img/bg5.jpg')
   background-position: top
-  display: flex
-  justify-content: center
-  align-items: center
+  background-color: #000
+  +flex-row-center
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    pointer-events: none
+    background-color: #000
+    animation: background-blur 1s ease forwards
   & > *
     margin: 0
   h1
@@ -226,6 +233,8 @@
     width: 60%
     text-align: center
     text-shadow: .2rem .2rem rgba(0,0,0,.6)
+    opacity: 0
+    animation: text-animation $animation-time .7s ease forwards
 .news__container__section-two
   height: auto
   background-color: #000
@@ -235,6 +244,9 @@
   padding-bottom: 4rem
   h2
     margin-top: 5rem
+    padding-top: 10rem
+    opacity: 0
+    animation: text-animation $animation-time 1.2s ease forwards
   & > *
     margin: 0
   &__news-container
@@ -244,6 +256,8 @@
     justify-content: space-between
     flex-wrap: wrap
     row-gap: 3rem
+    opacity: 0
+    animation: opacity-animation $animation-time 1.2s ease forwards
     &__news
       position: relative
       flex-basis: 30%
@@ -279,9 +293,7 @@
         &__date
           width: 30%
           height: 15%
-          display: flex
-          justify-content: center
-          align-items: center
+          +flex-row-center
           font-size: 1.5rem
           font-weight: bold
           color: #3d3d3d
@@ -316,10 +328,9 @@
         margin-bottom: 3rem
     &__archive-button
       position: relative
-      margin: 0 auto 1rem auto
+      margin: 4rem auto 1rem auto
       height: 6rem
       width: 20rem
-      margin-top: 4rem
       background-color: transparent
       color: #fff
       border: .2rem solid #fff
@@ -346,6 +357,101 @@
         transform-origin: 50% 100%
       &:hover
         color: #000
+.news__container__section-three
+  height: 45vh
+  background-color: #000
+  align-items: center
+  border-top: .1rem solid rgba(255, 255, 255, .25)
+  & > *
+    margin: 0
+  &__subscribe-container
+    width: 25%
+    height: 80%
+    padding: 3rem 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    text-transform: none
+    > p
+      width: 100%
+      font-size: 2rem
+      line-height: 2.6rem
+      margin-bottom: 2rem
+      text-align: center
+    form
+      width: 60%
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      flex-wrap: wrap
+      row-gap: 2rem
+      input:first-child
+        height: 4.5rem
+        width: 85%
+        background-color: transparent
+        border: none
+        border-bottom: .3rem solid #c23
+        color: #fff
+        outline: none
+        font-size: 1.6rem
+      button
+        +flex-row-center
+        position: relative
+        width: 3rem
+        height: 4.5rem
+        border: none
+        background-color: transparent
+        border-radius: 50%
+        cursor: pointer
+        &::after
+          position: absolute
+          content: ''
+          width: 100%
+          height: .3rem
+          bottom: 0
+          left: 0
+          background-color: #c23
+        &::before
+          position: absolute
+          content: ''
+          width: 2.7rem
+          height: 2.7rem
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
+          border-radius: 100%
+          border: .2rem solid #cccccc
+          opacity: 0
+          transition: all .3s ease
+        &:hover::before
+          opacity: 1
+        i
+          color: #ccc
+          font-size: 1.6rem
+      .subscribe-checkbox
+        +flex-row-center
+        height: 2rem
+        width: 2rem
+        background-color: transparent
+        border-radius: .2rem
+        border: .1rem solid #ccc
+        margin-right: 1rem
+        cursor: pointer
+        span
+          height: 1rem
+          width: 1rem
+          border-radius: .1rem
+          background-color: #ccc
+          opacity: 0
+          visibility: hidden
+          transition: all .3s ease
+      p
+        font-size: 1.4rem
+        line-height: 2rem
+        margin-top: -.4rem
+        width: 85%
+        font-style: italic
 .news1img
   background-image: url('../img/news1.jpg')
 .news2img
@@ -377,7 +483,16 @@
     opacity: 0
   100%
     opacity: 1
-
+@keyframes background-blur
+  0%
+    backdrop-filter: blur(30px)
+    background-color: #5a5a5a
+  15%
+    backdrop-filter: blur(30px)
+    background-color: #5a5a5a
+  100%
+    backdrop-filter: blur(0px)
+    background-color: transparent
 .animation1
   animation: text-animation $animation-time ease forwards
 .animation2

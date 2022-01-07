@@ -4,8 +4,7 @@ header
   left: 15%
   width: 85%
   height: 8vh
-  display: flex
-  align-items: center
+  +flex-row-center
   column-gap: 4rem
   font-size: 1.4rem
   font-weight: bold
@@ -36,9 +35,7 @@ header
       justify-content: space-evenly
       list-style: none
       &__element
-        display: flex
-        justify-content: center
-        align-items: center
+        +flex-row-center
         a
           position: relative
           margin-top: .3rem
@@ -64,10 +61,7 @@ header
     margin-left: auto
     margin-right: 7rem
     &__shop
-      width: 100%
-      display: flex
-      justify-content: center
-      align-items: center
+      +flex-row-center
     a
       position: relative
       margin-top: .3rem
@@ -94,9 +88,7 @@ header
   right: 0
   height: 8vh
   margin: 1rem 3rem 0 0
-  display: flex
-  justify-content: center
-  align-items: center
+  +flex-row-center
   color: #fff
   background-color: transparent
   border: none
