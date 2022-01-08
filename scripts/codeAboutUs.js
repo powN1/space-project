@@ -66,7 +66,7 @@ const changeImage = function() {
   },transitionTimeMiliseconds)
     setTimeout(function(){
 
-      backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.15))), url("../img/bg2.jpg")`;
+      backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url("../img/bg2.jpg")`;
       headingLand.style.opacity = '1';
       headingLaunch.style.opacity = '.3';
       headingRepeat.style.opacity = '.3';
@@ -81,7 +81,7 @@ const changeImage = function() {
       backgroundDiv.style.animation = '';
   },transitionTimeMiliseconds)
     setTimeout(function(){
-      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.3))), url(../img/aboutusbg3repeat.jpg)';
+      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2))), url(../img/aboutusbg3repeat.jpg)';
       headingRepeat.style.opacity = '1';
       headingLaunch.style.opacity = '.3';
       headingLand.style.opacity = '.3';

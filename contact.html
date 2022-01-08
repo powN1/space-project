@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Space Continuum</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="header__logo" href="index.html"></a>
+      <nav>
+        <ul class="nav__list">
+          <li class="nav__list__element"><a href="mars.html">Mars 2026</a></li>
+          <li class="nav__list__element"><a href="news.html">News</a></li>
+          <li class="nav__list__element"><a href="careers.html">Careers</a></li>
+          <li class="nav__list__element"><a href="about-us.html">About us</a></li>
+          <li class="nav__list__element"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__right-content">
+        <div class="header__right-content__shop"><a href="shop.html">Shop</a></div>
+      </div>
+    </header>
+    <div class="container__hamburger">
+      <button class="container__hamburger__button" data-hamburger-button>
+        <span class="line first"></span>
+        <span class="line second"></span>
+        <span class="line third"></span>
+      </button>
+    </div>
+    <aside data-aside-menu>
+      <ul>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="launches.html">Launches</a></li>
+        <li><a href="updates.html">Updates</a></li>
+        <li><a href="suggestions.html">Suggestions</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </aside>
+    <section class="contact__container__section-one section-main">
+      <h1>Want to discuss your position at Space Continuum or receive information?</h1>
+      <p>Call us at <span data-contact-phone-number>00 36 6 266 96 96</span><span class="copy">Coppied!</span></p>
+
+      <form action="" data-contact-form>
+        <label for="name">First name<i class="fas fa-star-of-life"></i></label>
+        <input type="text id="name" placeholder="First name" required>
+        <label for="surnamename">Last name<i class="fas fa-star-of-life"></i></label>
+        <input type="text id="surname" placeholder="Last name" required>
+        <label for="email" data-contact-email-label>Email<i class="fas fa-star-of-life"></i></label>
+        <input type="text id="email" placeholder="Your email" required data-contact-email>
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone">
+        <label for="message">Your message</label>
+        <textarea name="message" id="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Space continuum 2022</a></li>
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">instagram</a></li>
+        <li><a href="#">linkedin</a></li>
+        <li><a href="#">privacy policy</a></li>
+      </ul>
+    </footer>
+    <div class="modal hide" data-modal></div>
+  </div>
+  <script src="../scripts/codeContact.js"></script>
+</body>
+</html>

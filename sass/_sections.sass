@@ -934,6 +934,113 @@ video
   top: 50%
   left: 50%
   transform: translate(-50%,-50%)
+
+/* =============================
+ About us page selectors (5th page)
+ ============================ */
+
+.contact__container__section-one
+  background-image: linear-gradient(rgba(0,0,0,.6)), url('../img/contact1.jpg')
+  +flex-column-center
+  height: 120vh
+  row-gap: 3rem
+  & > *
+    margin: 0
+    text-transform: none
+  h1
+    font-size: 4.8rem
+    line-height: 7rem
+    width: 60%
+    text-align: center
+  > p
+    position: relative
+    font-size: 3.5rem
+    span:first-child
+      position: relative
+      font-weight: bold
+      cursor: pointer
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        height: .5rem
+        width: 100%
+        background-color: $span-color
+        margin-bottom: -.7rem
+    span.copy
+      position: absolute
+      top: 60%
+      left: 100%
+      transform: translateY(-50%)
+      margin-left: 2rem
+      font-size: 1.8rem
+      padding: .8rem 1.2rem
+      border-radius: .5rem
+      background-color: #fff
+      color: #000
+      visibility: hidden
+      opacity: 0
+      transition: all .5s ease
+  form
+    width: 30%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    flex-wrap: wrap
+    background-color: #ffffff
+    box-shadow: .2rem .2rem .5rem .1rem (rgba(0, 0, 0,0.5))
+    padding: 3rem 0
+    border-radius: .4rem
+    margin-top: 2rem
+    row-gap: 1rem
+    label
+      width: 80%
+      font-size: 1.6rem
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      column-gap: .5rem
+      color: rgba(0,0,0,.7)
+      i
+        font-size: .5rem
+        color: $span-color
+    input
+      width: 80%
+      font-size: 1.8rem
+      padding: 1rem
+      background-color: transparent
+      border: .1rem solid rgba(0,0,0,.25)
+      color: #000
+    textarea
+      width: 80%
+      resize: vertical
+      font-size: 1.8rem
+      padding: 1rem
+      min-height: 4rem
+      height: 10vh
+      max-height: 30vh
+      border: .1rem solid rgba(0,0,0,.25)
+      font-family: 'D-DIN Regular'
+    button
+      width: 80%
+      background-color: $span-color
+      padding: 1rem 0
+      border: none
+      border-radius: .4rem
+      cursor: pointer
+      font-size: 1.8rem
+      margin-top: 2rem
+      text-transform: uppercase
+      color: #fff
+      box-shadow: .1rem .1rem .5rem .1rem rgba(0, 0, 0, .3)
+      transition: all .3s ease
+      &:hover
+        background-color: #eb2539df
+.contact__container__section-one form input.wrong
+  border: .1rem solid red
+
 @keyframes text-animation
   0%
     padding-top: 10rem
