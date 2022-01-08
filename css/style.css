@@ -1818,8 +1818,8 @@ header .header__right-content a:focus:after {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  height: 100%;
-  width: 100%;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
   background-color: #fff;
   -webkit-transition: all .15s ease;
@@ -1958,23 +1958,19 @@ header .header__right-content a:focus:after {
 }
 
 .about-us1img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("../img/aboutusimg1.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("../img/aboutusimg1.jpg");
+  background-image: url("../img/aboutusimg1.jpg");
 }
 
 .about-us2img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("../img/aboutusimg2.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("../img/aboutusimg2.jpg");
+  background-image: url("../img/aboutusimg2.jpg");
 }
 
 .about-us3img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("../img/aboutusimg3.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("../img/aboutusimg3.jpg");
+  background-image: url("../img/aboutusimg3.jpg");
 }
 
 .about-us4img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0))), url("../img/aboutusimg4.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0)), url("../img/aboutusimg4.jpg");
+  background-image: url("../img/aboutusimg4.jpg");
 }
 
 .about-us__container__section-three {
@@ -2005,8 +2001,8 @@ header .header__right-content a:focus:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("../img/aboutusbg4static.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2)), url("../img/aboutusbg4static.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url("../img/aboutusbg4static.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url("../img/aboutusbg4static.jpg");
   -webkit-animation: background-change 15s linear infinite;
           animation: background-change 15s linear infinite;
 }
@@ -2042,6 +2038,103 @@ header .header__right-content a:focus:after {
   height: 1rem;
   width: 100%;
   background-color: #eb2539;
+}
+
+.play-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  -webkit-backdrop-filter: blur(0.15rem);
+          backdrop-filter: blur(0.15rem);
+  z-index: 3;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease, visibility 1s ease;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.play-toggle button {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.play-toggle button:hover i {
+  color: #eb2539;
+}
+
+.play-toggle button:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-toggle button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+}
+
+.play-toggle button i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  margin: .15rem 0 0 .15rem;
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  z-index: 1;
+  font-size: 1.8rem;
+}
+
+video {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @-webkit-keyframes text-animation {
