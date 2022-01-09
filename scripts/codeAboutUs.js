@@ -10,6 +10,17 @@ const divPlayContainer = document.querySelector('[data-play-container]');
 const divPlayContainerButton = document.querySelector('[data-play-container] button');
 const video = document.querySelector('[data-play-container] video');
 
+const sectionOne = document.querySelector('[data-about-us-section1]')
+const articleOne = document.querySelector('[data-about-us-article1]');
+const articleTwo = document.querySelector('[data-about-us-article2]');
+const articleThree = document.querySelector('[data-about-us-article3]');
+const articleFour = document.querySelector('[data-about-us-article4]');
+
+let articleOneDisplayed = false;
+let articleTwoDisplayed = false;
+let articleThreeDisplayed = false;
+let articleFourDisplayed = false;
+
 let imageNumber = 0;
 let intervalID = null;
 let intervalID2 = null;
@@ -94,7 +105,6 @@ const changeImage = function() {
 }
 
 const preventScrolling = function() {
-  console.log(scrollPositionY)
  if(scrollY >= scrollPositionY || scrollY <= scrollPositionY) window.scrollTo(0, scrollPositionY)
 }
 
@@ -141,4 +151,26 @@ window.addEventListener('scroll', function() {
     asideMenu.classList.toggle('slide');
     modal.classList.toggle('hide');
   }
+
+  if((window.scrollY + sectionOne.offsetHeight >= sectionOne.offsetHeight + articleOne.offsetHeight / 4) && !articleOneDisplayed) {
+    articleOneDisplayed = true;
+    articleOne.querySelector('.about-us__container__section-two__article__text-container').style.transform = `translateX(0)`;
+    articleOne.querySelector('.about-us__container__section-two__article__text-container').style.opacity = `1`;
+  }
+  if((window.scrollY + sectionOne.offsetHeight >= sectionOne.offsetHeight + articleOne.offsetHeight + articleTwo.offsetHeight / 4) && !articleTwoDisplayed) {
+    articleTwoDisplayed = true;
+    articleTwo.querySelector('.about-us__container__section-two__article__text-container').style.transform = `translateX(0)`;
+    articleTwo.querySelector('.about-us__container__section-two__article__text-container').style.opacity = `1`;
+  }
+  if((window.scrollY + sectionOne.offsetHeight >= sectionOne.offsetHeight + articleOne.offsetHeight + articleTwo.offsetHeight + articleThree.offsetHeight / 4) && !articleThreeDisplayed) {
+    articleThreeDisplayed = true;
+    articleThree.querySelector('.about-us__container__section-two__article__text-container').style.transform = `translateX(0)`;
+    articleThree.querySelector('.about-us__container__section-two__article__text-container').style.opacity = `1`;
+  }
+  if((window.scrollY + sectionOne.offsetHeight >= sectionOne.offsetHeight + articleOne.offsetHeight + articleTwo.offsetHeight + articleThree.offsetHeight + articleFour.offsetHeight / 4) && !articleFourDisplayed) {
+    articleFourDisplayed = true;
+    articleFour.querySelector('.about-us__container__section-two__article__text-container').style.transform = `translateX(0)`;
+    articleFour.querySelector('.about-us__container__section-two__article__text-container').style.opacity = `1`;
+  }
+
 })

@@ -1,5 +1,6 @@
 const btnHamburger = document.querySelector('[data-hamburger-button]');
 const asideMenu = document.querySelector('[data-aside-menu]');
+const asideMenuMobile = document.querySelector('[data-aside-menu-mobile]');
 const modal = document.querySelector('[data-modal]');
 const section1Mars = document.querySelector('[data-section-one-mars]');
 const section2Mars = document.querySelector('[data-section-two-mars]');
@@ -48,6 +49,7 @@ let lastScrollPosition = 0;
 btnHamburger.addEventListener('click', function(){
   btnHamburger.classList.toggle('open');
   asideMenu.classList.toggle('slide');
+  asideMenuMobile.classList.toggle('slide');
   modal.classList.toggle('hide');
 
 })
@@ -57,6 +59,7 @@ window.addEventListener('scroll', function() {
   if(btnHamburger.classList.contains('open')) {
     btnHamburger.classList.toggle('open');
     asideMenu.classList.toggle('slide');
+    asideMenuMobile.classList.toggle('slide');
     modal.classList.toggle('hide');
   }
 

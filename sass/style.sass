@@ -32,3 +32,261 @@ body
 @import 'sections'
 @import 'footer'
 @import 'modal'
+
+@media (max-width: 480px)
+  header
+    left: 0
+    width: 100%
+    height: 8vh
+    +flex-row-center
+    column-gap: 4rem
+    font-size: 1.4rem
+    .header__logo
+      flex-basis: 20%
+      height: 70%
+    .header__right-content
+      display: none
+    nav
+      display: none
+  .section-main
+    justify-content: flex-end
+    row-gap: 1rem
+    & > *
+      margin-left: auto
+      margin-right: auto
+    h2
+      font-size: 3.5rem
+    h3
+      font-size: 1.6rem
+    &__button
+      height: 5rem
+      width: 16rem
+      margin: 1rem auto 5rem auto
+  .container__section-three.section-main
+    background-image: linear-gradient(rgba(4,9,30,.35)),url('../img/bg3.jpg')
+    & > *
+      margin-left: auto
+    h2
+      font-size: 2.8rem
+    h3
+      font-size: 1.6rem
+    button
+      margin-bottom: 5rem
+  .container__section-two.section-main
+    h2
+      font-size: 2.8rem
+  footer
+    height: 15vh
+    ul
+      width: 100%
+      height: 80%
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      justify-items: center
+      padding: 0 2rem
+      flex-wrap: wrap
+      li:first-child
+        flex-basis: 100%
+      li
+        flex-basis: 25%
+        a
+          font-size: 1.1rem
+          text-align: center
+  .container aside:first-of-type
+    display: none
+  .container .mobile-menu
+    width: 80%
+    transform: translateX(100%)
+
+  .mars__container__section-one
+    justify-content: center
+    row-gap: 1rem
+    h1
+      font-size: 4.5rem
+    h2
+      font-size: 2.2rem
+      width: 80%
+      text-align: center
+  .mars__container__section-two
+    background-image: linear-gradient(rgba(0,0,0,.5)),url('../img/mars2.jpg')
+    align-items: center
+    justify-content: flex-start
+    &__content-container
+      position: static
+      width: 95%
+      align-items: center
+      row-gap: 1rem
+      > p
+        font-size: 1.4rem
+      h2
+        font-size: 2.6rem
+        margin-top: 2rem
+        width: 100%
+        text-align: center
+      &__parameters
+        div
+          p
+            font-size: 1.4rem
+            line-height: 2.5rem
+  .mars__container__section-three
+    height: 50vh
+    justify-content: flex-start
+    overflow: hidden
+    h3
+      font-size: 2.5rem
+      text-align: center
+    &__date-container
+      width: 90%
+      flex-wrap: wrap
+      div
+        flex-basis: 33%
+        span:first-child
+          font-size: 3rem
+        span:last-child
+          font-size: 1.5rem
+  .mars__container__section-four
+    row-gap: 1.5rem
+    justify-content: flex-start
+    h2
+      font-size: 3rem
+    h3
+      font-size: 1.8rem
+    video
+      left: -140%
+      filter: brightness(50%)
+    p
+      width: 90%
+      font-size: 1.4rem
+  .news__container__section-one
+    align-items: center
+    h1
+      font-size: 3rem
+      width: 90%
+      margin: 0 auto
+  .news__container__section-two
+    row-gap: 4rem
+    padding-bottom: 4rem
+    h2
+      margin-top: 4rem
+    &__news-container
+      width: 90%
+      &__news
+        flex-basis: 100%
+  .news__container__section-three
+    height: 60vh
+    &__subscribe-container
+      width: 90%
+      height: 100%
+      > p
+        font-size: 1.6rem
+      form
+        width: 90%
+  .careers__container__section-one
+    row-gap: 2rem
+    justify-content: center
+    h1
+      font-size: 3rem
+      width: 90%
+      line-height: 4rem
+      margin-top: 5rem
+    p
+      font-size: 1.6rem
+      line-height: 2.6rem
+      width: 90%
+    &__buttons-container
+      width: 90%
+      &__button
+        height: 5rem
+        font-size: 1.2rem
+  .careers__container__section-two
+    height: auto
+    row-gap: 2rem
+    justify-content: flex-start
+    padding: 3rem 0
+    h2
+      font-size: 2.5rem
+      text-align: center
+      width: 90%
+    p
+      font-size: 1.6rem
+      line-height: 2.6rem
+      width: 90%
+      text-align: justify
+      text-align-last: center
+      text-transform: none
+  .careers__container__section-three
+    padding-top: 4rem
+    row-gap: 2rem
+    & > p
+      font-size: 1.8rem
+    & > h3
+      font-size: 2.8rem
+      width: 90%
+      text-align: center
+      margin-bottom: 3rem
+    &__facilities-container
+      width: 90%
+      flex-direction: column
+      align-items: center
+      row-gap: 3rem
+      margin-bottom: 6rem
+      &__facility
+        width: 100%
+        &__img
+          height: 30rem
+  .careers__container__section-four
+    height: auto
+    flex-direction: column
+    &__img
+      flex-basis: 90vw
+      width: 90vw
+    &__container
+      min-height: 70vw
+      flex-direction: column
+      justify-content: flex-start
+      row-gap: 2rem
+      align-items: center
+      flex-basis: 50%
+      width: 90%
+      &__button-container
+        margin-top: auto
+      h3
+        width: 100%
+        font-size: 2rem
+        line-height: 3rem
+        text-align: center
+      p
+        width: 100%
+        font-size: 1.4rem
+        text-align: center
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        align-items: center
+        row-gap: 1rem
+        span:first-child
+          width: 100%
+          height: .1rem
+          opacity: .7
+          margin-bottom: .5rem
+          margin-top: -1rem
+        span:nth-of-type(3), span:nth-of-type(5)
+          display: none
+  .careers__container__section-five
+    height: auto
+    row-gap: 2.5rem
+    padding: 5rem 0
+    justify-content: flex-start
+    p:first-of-type
+      font-size: 1.6rem
+    h3
+      font-size: 2.8rem
+      width: 90%
+      text-align: center
+    p:nth-of-type(2)
+      font-size: 1.6rem
+      line-height: 2.6rem
+      width: 90%
+    > button
+      width: 60%

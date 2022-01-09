@@ -17,7 +17,7 @@
       <nav>
         <ul class="nav__list">
           <li class="nav__list__element">
-            <a class="shop-link" href="mars.html" data-link="0">mens</a>
+            <a class="shop-link" href="#" data-link="0">mens</a>
             <ul class="shop-link-ul" data-link-ul="0">
               <span></span>
               <li>Shirts</li>
@@ -26,7 +26,7 @@
             </ul>
           </li>
           <li class="nav__list__element">
-            <a class="shop-link" href="news.html" data-link="1">womens</a>
+            <a class="shop-link" href="#" data-link="1">womens</a>
             <ul class="shop-link-ul" data-link-ul="1">
               <span></span>
               <li>Shirts</li>
@@ -35,7 +35,7 @@
             </ul>
           </li>
           <li class="nav__list__element">
-            <a class="shop-link" href="careers.html" data-link="2">kids</a>
+            <a class="shop-link" href="#" data-link="2">kids</a>
             <ul class="shop-link-ul" data-link-ul="2">
               <span></span>
               <li>Shirts</li>
@@ -44,14 +44,14 @@
             </ul>
           </li>
           <li class="nav__list__element">
-            <a class="shop-link" href="about-us.html" data-link="3">accessories</a>
+            <a class="shop-link" href="#" data-link="3">accessories</a>
             <ul class="shop-link-ul" data-link-ul="3">
               <span></span>
               <li>View all</li>
             </ul>
           </li>
           <li class="nav__list__element">
-            <a class="shop-link" href="contact.html" data-link="4">premium</a>
+            <a class="shop-link" href="#" data-link="4">premium</a>
             <ul class="shop-link-ul" data-link-ul="4">
               <span></span>
               <li>View all</li>
@@ -61,19 +61,16 @@
       </nav>
       <div class="header-shop__right-content">
         <a href="#">Account</a>
-        <a href="#">Search</a>
+        <a href="#" class="search-items">Search</a>
         <a href="#">Cart (<span>0</span>)</a>
       </div>
     </header>
-    <aside data-aside-menu>
-      <ul>
-        <li><a href="missions.html">Missions</a></li>
-        <li><a href="launches.html">Launches</a></li>
-        <li><a href="updates.html">Updates</a></li>
-        <li><a href="suggestions.html">Suggestions</a></li>
-        <li><a href="shop.html">Shop</a></li>
-      </ul>
-    </aside>
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search...">
+      <button class="search-box__close"><i class="fas fa-times"></i></button>
+    </div>
+    
     <section class="shop__container__section-one section-main">
       <h2>SHOP SPACE CONTINUUM</h2>
     </section>
@@ -85,32 +82,31 @@
           <p>Men's bomber jacket</p>
           <p>120.00&euro;</p>
         </div>
-        <div class="shop__container__section-two__products-container1__product">
-          <div class="shop__container__section-two__products-container1__product__img"></div>
-          <p>Men's bomber jacket</p>
-          <p>120.00&euro;</p>
+        <div class="shop__container__section-two__products-container1__product2">
+          <div class="shop__container__section-two__products-container1__product2__img"></div>
+          <p>UNISEX STARSHIP PULLOVER HOODIE</p>
+          <p>60.00&euro;</p>
         </div>
       </article>
-      <button>view all featured</button>
+      <button class="midsection-button">view all featured</button>
       <article class="shop__container__section-two__products-container2">
         <div class="shop__container__section-two__products-container2__product">
-          <div class="shop__container__section-two__products-container2__product__img"></div>
+          <div class="shop__container__section-two__products-container2__product__img img-bottom-1"></div>
           <h3>women's</h3>
-          <button></button>
+          <button>view products</button>
         </div>
         <div class="shop__container__section-two__products-container2__product">
-          <div class="shop__container__section-two__products-container2__product__img"></div>
-          <h3>women's</h3>
-          <button></button>
+          <div class="shop__container__section-two__products-container2__product__img img-bottom-2"></div>
+          <h3>men's</h3>
+          <button>view products</button>
         </div>
         <div class="shop__container__section-two__products-container2__product">
-          <div class="shop__container__section-two__products-container2__product__img"></div>
-          <h3>women's</h3>
-          <button></button>
+          <div class="shop__container__section-two__products-container2__product__img img-bottom-3"></div>
+          <h3>accessories</h3>
+          <button>view products</button>
         </div>
       </article>
     </section>
-    
     <footer>
       <ul>
         <li><a href="#">Space continuum 2022</a></li>
@@ -121,7 +117,7 @@
         <li><a href="#">privacy policy</a></li>
       </ul>
     </footer>
-    <div class="modal hide" data-modal></div>
+    <div class="modal modal-shop hide" data-modal></div>
   </div>
   <script src="../scripts/codeShop.js"></script>
 </body>
