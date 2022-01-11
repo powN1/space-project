@@ -1,6 +1,7 @@
 const btnHamburger = document.querySelector('[data-hamburger-button]');
 const asideMenu = document.querySelector('[data-aside-menu]');
 const modal = document.querySelector('[data-modal]');
+const asideMenuMobile = document.querySelector('[data-aside-menu-mobile]');
 const backgroundDiv = document.querySelector('[data-about-us-section-background-div]');
 const headingLaunch = document.querySelector('[data-about-us-launch]');
 const headingLand = document.querySelector('[data-about-us-land]');
@@ -33,17 +34,21 @@ const changeBackground = function() {
   intervalID = setInterval(()=> {
     if(imageNumber >= 3) imageNumber = 0;
     if(imageNumber === 0) {
-      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url(../img/aboutusbg2launch.jpg)';
+      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url(../img/1920x1080/aboutusbg2launch.jpg)';
       headingLaunch.style.opacity = '1';
       headingLand.style.opacity = '.3';
       headingRepeat.style.opacity = '.3';
     } else if (imageNumber === 1) {
-      backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url("../img/bg2.jpg")`;
+      if(window.innerWidth <= 480) {
+        backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url("../img/480w/mainBg2w400h1000.jpg")`;
+      } else {
+        backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url("../img/1920x1080/mainBg2.jpg")`;
+      }
       headingLand.style.opacity = '1';
       headingLaunch.style.opacity = '.3';
       headingRepeat.style.opacity = '.3';
     } else if (imageNumber === 2) {
-      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2))), url(../img/aboutusbg3repeat.jpg)';
+      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2))), url(../img/1920x1080/aboutusbg3repeat.jpg)';
       headingRepeat.style.opacity = '1';
       headingLaunch.style.opacity = '.3';
       headingLand.style.opacity = '.3';
@@ -61,7 +66,7 @@ const changeImage = function() {
       backgroundDiv.style.animation = '';
   },transitionTimeMiliseconds)
     setTimeout(function() {
-      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url(../img/aboutusbg2launch.jpg)';
+      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url(../img/1920x1080/aboutusbg2launch.jpg)';
       headingLaunch.style.opacity = '1';
       headingLand.style.opacity = '.3';
       headingRepeat.style.opacity = '.3';
@@ -76,8 +81,11 @@ const changeImage = function() {
       backgroundDiv.style.animation = '';
   },transitionTimeMiliseconds)
     setTimeout(function(){
-
-      backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url("../img/bg2.jpg")`;
+      if(window.innerWidth <= 480) {
+        backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url("../img/480w/mainBg2w400h1000.jpg")`;
+      } else {
+        backgroundDiv.style.backgroundImage = `-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url("../img/1920x1080/mainbg2.jpg")`;
+      }
       headingLand.style.opacity = '1';
       headingLaunch.style.opacity = '.3';
       headingRepeat.style.opacity = '.3';
@@ -92,7 +100,7 @@ const changeImage = function() {
       backgroundDiv.style.animation = '';
   },transitionTimeMiliseconds)
     setTimeout(function(){
-      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2))), url(../img/aboutusbg3repeat.jpg)';
+      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2))), url(../img/1920x1080/aboutusbg3repeat.jpg)';
       headingRepeat.style.opacity = '1';
       headingLaunch.style.opacity = '.3';
       headingLand.style.opacity = '.3';
@@ -141,6 +149,7 @@ divPlayContainerButton.addEventListener('click', togglePlayScreen);
 btnHamburger.addEventListener('click', function(){
   btnHamburger.classList.toggle('open');
   asideMenu.classList.toggle('slide');
+  asideMenuMobile.classList.toggle('slide');
   modal.classList.toggle('hide');
 })
 
@@ -149,6 +158,7 @@ window.addEventListener('scroll', function() {
   if(btnHamburger.classList.contains('open')) {
     btnHamburger.classList.toggle('open');
     asideMenu.classList.toggle('slide');
+    asideMenuMobile.classList.toggle('slide');
     modal.classList.toggle('hide');
   }
 
@@ -172,5 +182,4 @@ window.addEventListener('scroll', function() {
     articleFour.querySelector('.about-us__container__section-two__article__text-container').style.transform = `translateX(0)`;
     articleFour.querySelector('.about-us__container__section-two__article__text-container').style.opacity = `1`;
   }
-
 })

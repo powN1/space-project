@@ -591,8 +591,8 @@ header .header__right-content a:focus:after {
 }
 
 .container__section-one.section-main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.15))), url("../img/bg4.jpg");
-  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/bg4.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.15))), url("../img/1920x1080/mainBg1.jpg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg1.jpg");
 }
 
 .container__section-one.section-main h3 {
@@ -611,8 +611,8 @@ header .header__right-content a:focus:after {
 }
 
 .container__section-two.section-main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.15))), url("../img/bg2.jpg");
-  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/bg2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.15))), url("../img/1920x1080/mainBg2.jpg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg2.jpg");
 }
 
 .container__section-two.section-main h3 {
@@ -628,8 +628,8 @@ header .header__right-content a:focus:after {
 }
 
 .container__section-three.section-main {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.15))), url("../img/bg3.jpg");
-  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/bg3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.15))), url("../img/1920x1080/mainBg3.jpg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg3.jpg");
 }
 
 .container__section-three.section-main h3 {
@@ -657,8 +657,8 @@ header .header__right-content a:focus:after {
  Mars page selectors (2nd page)
  @mixin =========================== */
 .mars__container__section-one {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.25))), url("../img/mars.jpg");
-  background-image: linear-gradient(rgba(4, 9, 30, 0.25)), url("../img/mars.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.25))), url("../img/1920x1080/marsBg1.jpg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.25)), url("../img/1920x1080/marsBg1.jpg");
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -683,8 +683,8 @@ header .header__right-content a:focus:after {
 }
 
 .mars__container__section-two {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url("../img/mars2.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url("../img/mars2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url("../img/1920x1080/marsBg2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url("../img/1920x1080/marsBg2.jpg");
   position: relative;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -917,8 +917,8 @@ header .header__right-content a:focus:after {
 .news__container__section-one {
   position: relative;
   height: 60vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/bg5.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/bg5.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/1920x1080/newsBg1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/1920x1080/newsBg1.jpg");
   background-position: top;
   background-color: #000;
   display: -webkit-box;
@@ -1369,8 +1369,8 @@ header .header__right-content a:focus:after {
  Careers page selectors (4th page)
  @mixin =========================== */
 .careers__container__section-one {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45))), url("../img/bg6.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45)), url("../img/bg6.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45))), url("../img/1920x1080/careersBg1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45)), url("../img/1920x1080/careersBg1.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1621,27 +1621,27 @@ header .header__right-content a:focus:after {
 }
 
 .careers-img1 {
-  background-image: url(../img/careers1.jpg);
+  background-image: url(../img/careersLocation1.jpg);
 }
 
 .careers-img2 {
-  background-image: url(../img/careers2.jpg);
+  background-image: url(../img/careersLocation2.jpg);
 }
 
 .careers-img3 {
-  background-image: url(../img/careers3.jpg);
+  background-image: url(../img/careersLocation3.jpg);
 }
 
 .careers-img4 {
-  background-image: url(../img/careers4.jpg);
+  background-image: url(../img/careersLocation4.jpg);
 }
 
 .careers-img5 {
-  background-image: url(../img/careers5.jpg);
+  background-image: url(../img/careersLocation5.jpg);
 }
 
 .careers-img6 {
-  background-image: url(../img/careers6.jpg);
+  background-image: url(../img/careersLocation6.jpg);
 }
 
 .careers__container__section-four {
@@ -1876,8 +1876,8 @@ header .header__right-content a:focus:after {
       -ms-flex-align: start;
           align-items: flex-start;
   row-gap: 3rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../img/aboutusbg1.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/aboutusbg1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../img/1920x1080/aboutusbg1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/1920x1080/aboutusbg1.jpg");
 }
 
 .about-us__container__section-one > * {
@@ -2162,8 +2162,11 @@ header .header__right-content a:focus:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url("../img/aboutusbg4static.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url("../img/aboutusbg4static.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1))), url("../img/1920x1080/aboutusbg4static.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url("../img/1920x1080/aboutusbg4static.jpg");
   -webkit-animation: background-change 15s linear infinite;
           animation: background-change 15s linear infinite;
 }
@@ -2289,8 +2292,8 @@ header .header__right-content a:focus:after {
 }
 
 .about-us-video {
-  width: 1280px;
-  height: 720px;
+  width: Max(66.6666vw, 1280px);
+  height: Max(66.6666vh, 720px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2299,7 +2302,7 @@ header .header__right-content a:focus:after {
 }
 
 /* =============================
- About us page selectors (5th page)
+ Contact page selectors (6th page)
  @mixin =========================== */
 .contact__container__section-one {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("../img/contact1.jpg");
@@ -2463,7 +2466,7 @@ header .header__right-content a:focus:after {
   background-color: #eb2539df;
 }
 
-.contact__container__section-one form input.wrong {
+.contact__container__section-one form input.wrong, .contact__container__section-one form textarea.wrong {
   border: .1rem solid red;
 }
 
@@ -3057,27 +3060,11 @@ footer ul li a:hover {
   opacity: 0;
 }
 
-@media (max-width: 480px) {
+@media all and (max-width: 480px) {
   header {
     left: 0;
     width: 100%;
     height: 8vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-column-gap: 4rem;
-            column-gap: 4rem;
-    font-size: 1.4rem;
   }
   header .header__logo {
     -ms-flex-preferred-size: 20%;
@@ -3111,9 +3098,9 @@ footer ul li a:hover {
     width: 16rem;
     margin: 1rem auto 5rem auto;
   }
-  .container__section-three.section-main {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.35))), url("../img/bg3.jpg");
-    background-image: linear-gradient(rgba(4, 9, 30, 0.35)), url("../img/bg3.jpg");
+  .container__section-two.section-main {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.35))), url("../img/480w/mainBg2w400h1000.jpg");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.35)), url("../img/480w/mainBg2w400h1000.jpg");
   }
   .container__section-three.section-main > * {
     margin-left: auto;
@@ -3185,8 +3172,6 @@ footer ul li a:hover {
     text-align: center;
   }
   .mars__container__section-two {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/mars2.jpg");
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/mars2.jpg");
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3464,6 +3449,164 @@ footer ul li a:hover {
   }
   .careers__container__section-five > button {
     width: 60%;
+  }
+  .about-us__container__section-one {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 3rem;
+  }
+  .about-us__container__section-one h1 {
+    font-size: 5rem;
+    width: 90%;
+    text-align: center;
+  }
+  .about-us__container__section-one > p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    width: 90%;
+  }
+  .about-us__container__section-one__play-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1.5rem;
+    width: 90%;
+  }
+  .about-us__container__section-two__article {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    background-color: #111;
+  }
+  .about-us__container__section-two__article__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .about-us__container__section-two__article__text-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 2rem;
+    width: 90%;
+    z-index: 1;
+  }
+  .about-us__container__section-two__article__text-container p:first-of-type {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #ccc;
+  }
+  .about-us__container__section-two__article__text-container h2 {
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .about-us__container__section-two__article__text-container p:nth-of-type(2) {
+    width: 90%;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-bottom: 0;
+  }
+  .about-us1img {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/aboutusimg1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg1.jpg");
+  }
+  .about-us2img {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/aboutusimg2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg2.jpg");
+  }
+  .about-us3img {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/aboutusimg3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg3.jpg");
+  }
+  .about-us4img {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("../img/aboutusimg4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg4.jpg");
+  }
+  .about-us__container__section-three {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 5rem;
+  }
+  .about-us__container__section-three h3 {
+    font-size: 5rem;
+  }
+  .about-us__container__section-three h3 span {
+    height: .5rem;
+  }
+  .about-us-video {
+    width: 100vw;
+    height: 56.25vw;
+  }
+  .contact__container__section-one {
+    height: 150vh;
+    row-gap: 3rem;
+  }
+  .contact__container__section-one h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    width: 90%;
+  }
+  .contact__container__section-one > p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .contact__container__section-one > p span.copy {
+    top: 25%;
+    left: 75%;
+    margin-left: 2rem;
+  }
+  .contact__container__section-one form {
+    width: 90%;
+    margin: 1rem 0 4rem 0;
+  }
+  .contact__container__section-one form label {
+    font-size: 1.4rem;
+  }
+  .contact__container__section-one form label i {
+    font-size: .4rem;
+  }
+  .contact__container__section-one form input, .contact__container__section-one form textarea {
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

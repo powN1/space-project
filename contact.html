@@ -47,16 +47,16 @@
       <p>Call us at <span data-contact-phone-number>00 36 6 266 96 96</span><span class="copy">Coppied!</span></p>
 
       <form action="" data-contact-form>
-        <label for="name">First name<i class="fas fa-star-of-life"></i></label>
-        <input type="text id="name" placeholder="First name" required>
-        <label for="surnamename">Last name<i class="fas fa-star-of-life"></i></label>
-        <input type="text id="surname" placeholder="Last name" required>
+        <label for="name" data-first-name-label>First name<i class="fas fa-star-of-life"></i></label>
+        <input type="text id="name" placeholder="First name" data-first-name>
+        <label for="surnamename" data-last-name-label>Last name<i class="fas fa-star-of-life"></i></label>
+        <input type="text id="surname" placeholder="Last name" data-last-name>
         <label for="email" data-contact-email-label>Email<i class="fas fa-star-of-life"></i></label>
-        <input type="text id="email" placeholder="Your email" required data-contact-email>
+        <input type="text id="email" placeholder="Your email" data-contact-email>
         <label for="phone">Phone number</label>
         <input type="tel" id="phone">
-        <label for="message">Your message</label>
-        <textarea name="message" id="message"></textarea>
+        <label for="message" data-contact-textarea-label>Your message<i class="fas fa-star-of-life"></i></label>
+        <textarea name="message" id="message" data-contact-textarea></textarea>
         <button type="submit">Send</button>
       </form>
     </section>

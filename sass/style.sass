@@ -33,14 +33,11 @@ body
 @import 'footer'
 @import 'modal'
 
-@media (max-width: 480px)
+@media all and (max-width: 480px)
   header
     left: 0
     width: 100%
     height: 8vh
-    +flex-row-center
-    column-gap: 4rem
-    font-size: 1.4rem
     .header__logo
       flex-basis: 20%
       height: 70%
@@ -62,8 +59,9 @@ body
       height: 5rem
       width: 16rem
       margin: 1rem auto 5rem auto
+  .container__section-two.section-main
+    background-image: linear-gradient(rgba(4,9,30,.35)),url('../img/480w/mainBg2w400h1000.jpg')
   .container__section-three.section-main
-    background-image: linear-gradient(rgba(4,9,30,.35)),url('../img/bg3.jpg')
     & > *
       margin-left: auto
     h2
@@ -98,7 +96,6 @@ body
   .container .mobile-menu
     width: 80%
     transform: translateX(100%)
-
   .mars__container__section-one
     justify-content: center
     row-gap: 1rem
@@ -109,7 +106,6 @@ body
       width: 80%
       text-align: center
   .mars__container__section-two
-    background-image: linear-gradient(rgba(0,0,0,.5)),url('../img/mars2.jpg')
     align-items: center
     justify-content: flex-start
     &__content-container
@@ -290,3 +286,97 @@ body
       width: 90%
     > button
       width: 60%
+  .about-us__container__section-one
+    justify-content: center
+    row-gap: 3rem
+    h1
+      font-size: 5rem
+      width: 90%
+      text-align: center
+    > p
+      font-size: 2.2rem
+      line-height: 3.2rem
+      text-align: center
+      width: 90%
+    &__play-container
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      row-gap: 1.5rem
+      width: 90%
+  .about-us__container__section-two
+    &__article
+      position: relative
+      flex-direction: column
+      height: 100vh
+      background-color: #111
+      &__img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+      &__text-container
+        align-items: center
+        row-gap: 2rem
+        width: 90%
+        z-index: 1
+        p:first-of-type
+          font-size: 1.5rem
+          margin-top: 2rem
+          color: #ccc
+        h2
+          font-size: 3.5rem
+          width: 100%
+          text-align: center
+        p:nth-of-type(2)
+          width: 90%
+          font-size: 1.8rem
+          line-height: 2.6rem
+          margin-bottom: 0
+  .about-us1img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg1.jpg')
+  .about-us2img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg2.jpg')
+  .about-us3img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg3.jpg')
+  .about-us4img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg4.jpg')
+  .about-us__container__section-three
+    position: relative
+    +flex-column-center
+    row-gap: 5rem
+    h3
+      font-size: 5rem
+      span
+        height: .5rem
+  .about-us-video
+    width: 100vw
+    height: 56.25vw
+  .contact__container__section-one
+    height: 150vh
+    row-gap: 3rem
+    h1
+      font-size: 3rem
+      line-height: 4.5rem
+      width: 90%
+    > p
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      row-gap: 1rem
+      text-align: center
+      font-size: 3rem
+      span.copy
+        top: 25%
+        left: 75%
+        margin-left: 2rem
+    form
+      width: 90%
+      margin: 1rem 0 4rem 0
+      label
+        font-size: 1.4rem
+        i
+          font-size: .4rem
+      input, textarea
+        font-size: 1.6rem

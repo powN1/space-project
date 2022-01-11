@@ -49,7 +49,7 @@
     &:hover
       color: #000
 .container__section-one.section-main
-  background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/bg4.jpg')
+  background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/1920x1080/mainBg1.jpg')
   h3
     animation: text-animation $animation-time ease
   h2
@@ -57,7 +57,7 @@
   button
     animation: opacity-animation $animation-time ease
 .container__section-two.section-main
-  background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/bg2.jpg')
+  background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/1920x1080/mainBg2.jpg')
   h3
     opacity: 0
   h2
@@ -65,7 +65,7 @@
   button
     opacity: 0
 .container__section-three.section-main
-  background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/bg3.jpg')
+  background-image: linear-gradient(rgba(4,9,30,.15)),url('../img/1920x1080/mainBg3.jpg')
   h3
     opacity: 0
   h2
@@ -83,7 +83,7 @@
  ============================ */
 
 .mars__container__section-one
-  background-image: linear-gradient(rgba(4,9,30,.25)),url('../img/mars.jpg')
+  background-image: linear-gradient(rgba(4,9,30,.25)),url('../img/1920x1080/marsBg1.jpg')
   align-items: center
   row-gap: 2rem
   h1
@@ -96,7 +96,7 @@
     margin: 0
     text-shadow: .2rem .2rem rgba(0,0,0,.3)
 .mars__container__section-two
-  background-image: linear-gradient(rgba(0,0,0,.1)),url('../img/mars2.jpg')
+  background-image: linear-gradient(rgba(0,0,0,.1)),url('../img/1920x1080/marsBg2.jpg')
   position: relative
   justify-content: flex-start
   h2, p, div
@@ -221,7 +221,7 @@
 .news__container__section-one
   position: relative
   height: 60vh
-  background-image: linear-gradient(rgba(0,0,0,0.5)),url('../img/bg5.jpg')
+  background-image: linear-gradient(rgba(0,0,0,0.5)),url('../img/1920x1080/newsBg1.jpg')
   background-position: top
   background-color: #000
   +flex-row-center
@@ -479,7 +479,7 @@
  Careers page selectors (4th page)
  ============================ */
 .careers__container__section-one
-  background-image: linear-gradient(rgba(0,0,0,0.45)),url('../img/bg6.jpg')
+  background-image: linear-gradient(rgba(0,0,0,0.45)),url('../img/1920x1080/careersBg1.jpg')
   +flex-column-center
   row-gap: 4rem
   & > *
@@ -615,17 +615,17 @@
         padding: 0 3rem
         margin-top: -.5rem
 .careers-img1
-  background-image: url(../img/careers1.jpg)
+  background-image: url(../img/careersLocation1.jpg)
 .careers-img2
-  background-image: url(../img/careers2.jpg)
+  background-image: url(../img/careersLocation2.jpg)
 .careers-img3
-  background-image: url(../img/careers3.jpg)
+  background-image: url(../img/careersLocation3.jpg)
 .careers-img4
-  background-image: url(../img/careers4.jpg)
+  background-image: url(../img/careersLocation4.jpg)
 .careers-img5
-  background-image: url(../img/careers5.jpg)
+  background-image: url(../img/careersLocation5.jpg)
 .careers-img6
-  background-image: url(../img/careers6.jpg)
+  background-image: url(../img/careersLocation6.jpg)
 
 .careers__container__section-four
   height: 75vh
@@ -745,7 +745,7 @@
   justify-content: center
   align-items: flex-start
   row-gap: 3rem
-  background-image: linear-gradient(rgba(0,0,0,0.3)),url('../img/aboutusbg1.jpg')
+  background-image: linear-gradient(rgba(0,0,0,0.3)),url('../img/1920x1080/aboutusbg1.jpg')
   & > *
     margin: 0
     margin-left: 15%
@@ -886,8 +886,10 @@
     left: 0
     width: 100%
     height: 100%
-    background-image:
-    background-image: linear-gradient(rgba(0,0,0,0.1)),url('../img/aboutusbg4static.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-image: linear-gradient(rgba(0,0,0,0.1)),url('../img/1920x1080/aboutusbg4static.jpg')
     animation: background-change 15s linear infinite
   & > *
     margin: 0
@@ -949,15 +951,15 @@
       z-index: 1
       font-size: 1.8rem
 .about-us-video
-  width: 1280px
-  height: 720px
+  width: Max(66.6666vw, 1280px)
+  height: Max(66.6666vh, 720px)
   position: absolute
   top: 50%
   left: 50%
   transform: translate(-50%,-50%)
 
 /* =============================
- About us page selectors (5th page)
+ Contact page selectors (6th page)
  ============================ */
 
 .contact__container__section-one
@@ -1059,7 +1061,7 @@
       transition: all .3s ease
       &:hover
         background-color: #eb2539df
-.contact__container__section-one form input.wrong
+.contact__container__section-one form input.wrong, .contact__container__section-one form textarea.wrong
   border: .1rem solid red
 
 /* =============================

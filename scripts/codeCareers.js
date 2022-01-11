@@ -11,19 +11,19 @@ const buttonLeft = document.querySelector('[data-button-left]');
 const buttonRight = document.querySelector('[data-button-right]');
 
 const quotes = [{
-    imgSrc: 'url(../img/careersEmployee1.jpg)',
+    imgSrc: 'url(../img/1920x1080/careersEmployee1.jpg)',
     quote: '"It is not hard to wake up every day when your mission is enabling a permanent human presence in space on a daily basis."',
     name: 'Gareth',
     department: 'Safety & mission assurance',
     time: '7 years',
   },{
-    imgSrc: 'url(../img/careersEmployee2.jpg)',
+    imgSrc: 'url(../img/1920x1080/careersEmployee2.jpg)',
     quote: '"I used to pore over star charts. Now I get to watch my ideas go from the whiteboard to real functioning rocket parts, then all the way to space."',
     name: 'Judith',
     department: 'System engineer',
     time: '2 years',
   },{
-    imgSrc: 'url(../img/careersEmployee3.jpg)',
+    imgSrc: 'url(../img/1920x1080/careersEmployee3.jpg)',
     quote: '"The hard work preparing for flight is always worth it when you see customers getting their hardware back after its trip to space."',
     name: 'Jake',
     department: 'SR. Integration engineer',
