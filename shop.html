@@ -13,6 +13,13 @@
 <body>
   <div class="container">
     <header class="header-shop">
+      <div class="header-shop__humburger-left-mobile" data-shop-hamburger-mobile>
+        <button class="container__hamburger__button" data-hamburger-button>
+          <span class="line first"></span>
+          <span class="line second"></span>
+          <span class="line third"></span>
+        </button>
+      </div>
       <a class="header-shop__logo" href="index.html"></a>
       <nav>
         <ul class="nav__list">
@@ -64,13 +71,73 @@
         <a href="#" class="search-items">Search</a>
         <a href="#">Cart (<span>0</span>)</a>
       </div>
+      <div class="header-shop__right-content-mobile">
+        <a href="#"><i class="fas fa-search" data-shop-search-mobile></i></a>
+        <a href="#"><i class="fas fa-shopping-basket"></i></a>
+      </div>
     </header>
     <div class="search-box">
       <i class="fas fa-search"></i>
       <input type="text" placeholder="Search...">
       <button class="search-box__close"><i class="fas fa-times"></i></button>
     </div>
-    
+    <aside class="shop-aside-categories-mobile">
+      <button class="shop-aside-categories-mobile__close-button" data-aside-shop-mobile-close-button><i class="fas fa-times"></i></button>
+      <ul data-mobile-categories-list>
+        <li data-list-number="0">Mens
+          <div class="close-container">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+          </div>
+          <ul>
+            <li>Shirts</li>
+            <li>Outwear</li>
+            <li>View all</li>
+          </ul>
+        </li>
+        <li data-list-number="1">Womens
+          <div class="close-container">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+          </div>
+          <ul>
+            <li>Shirts</li>
+            <li>Outwear</li>
+            <li>View all</li>
+          </ul>
+        </li>
+        <li data-list-number="2">Kids
+          <div class="close-container">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+          </div>
+          <ul>
+            <li>Shirts</li>
+            <li>Outwear</li>
+            <li>View all</li>
+          </ul>
+        </li>
+        <li data-list-number="3">Accessories
+          <div class="close-container">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+          </div>
+          <ul>
+            <Li>View all</Li>
+          </ul>
+        </li>
+        <li data-list-number="4">Premium
+          <div class="close-container">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+          </div>
+          <ul>
+            <li>View all</li>
+          </ul>
+        </li>
+        <li>Account</li>
+      </ul>
+    </aside>
     <section class="shop__container__section-one section-main">
       <h2>SHOP SPACE CONTINUUM</h2>
     </section>
