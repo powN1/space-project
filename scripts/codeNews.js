@@ -19,17 +19,14 @@ let intervalThree;
 const resetText = function() {
   p.style.fontStyle = 'italic'
   p.style.color = '#fff'
-  p.style.fontSize = `1.4rem`
   form.querySelector('p').textContent = pContent
   }
 
 form.addEventListener('submit', function(e) {
-
   if(!checkboxChecked) {
     e.preventDefault()
     p.style.fontStyle = 'normal'
     p.style.color = 'red'
-    p.style.fontSize = `1.8rem`
     form.querySelector('p').textContent = 'You need to agree to the terms in order to proceed.'
     intervalOne = setTimeout(resetText, 6000)
   } else if(checkboxChecked) {
@@ -37,7 +34,6 @@ form.addEventListener('submit', function(e) {
     e.preventDefault()
     p.style.fontStyle = 'normal'
     p.style.color = 'red'
-    p.style.fontSize = `1.8rem`
     form.querySelector('p').textContent = 'Please type your email.'
     intervalTwo = setTimeout(resetText, 6000)
     } else if (input.value) {
@@ -45,7 +41,6 @@ form.addEventListener('submit', function(e) {
         e.preventDefault()
         p.style.fontStyle = 'normal'
     p.style.color = 'red'
-    p.style.fontSize = `1.8rem`
     form.querySelector('p').textContent = 'Wrong email address.'
     intervalThree = setTimeout(resetText, 6000)
       }

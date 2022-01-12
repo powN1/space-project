@@ -15,6 +15,7 @@
 $animation-time: 1.25s
 $span-color: #eb2539
 $visibility-status: hidden
+
 *:focus
   outline: none
 html
@@ -59,6 +60,7 @@ body
       height: 5rem
       width: 16rem
       margin: 1rem auto 5rem auto
+      font-size: 1.5rem
   .container__section-two.section-main
     background-image: linear-gradient(rgba(4,9,30,.35)),url('../img/480w/mainBg2w400h1000.jpg')
   .container__section-three.section-main
@@ -70,6 +72,8 @@ body
       font-size: 1.6rem
     button
       margin-bottom: 5rem
+      height: 5rem
+      width: 16rem
   .container__section-two.section-main
     h2
       font-size: 2.8rem
@@ -106,6 +110,7 @@ body
       width: 80%
       text-align: center
   .mars__container__section-two
+    background-image: linear-gradient(rgba(0,0,0,.35)),url('../img/1920x1080/marsBg2.jpg')
     align-items: center
     justify-content: flex-start
     &__content-container
@@ -305,6 +310,7 @@ body
       row-gap: 1.5rem
       width: 90%
   .about-us__container__section-two
+    row-gap: 0
     &__article
       position: relative
       flex-direction: column
@@ -338,7 +344,7 @@ body
   .about-us2img
     background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg2.jpg')
   .about-us3img
-    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg3.jpg')
+    background-image: linear-gradient(rgba(0,0,0,.7)), url('../img/aboutusimg3.jpg')
   .about-us4img
     background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg4.jpg')
   .about-us__container__section-three
@@ -428,8 +434,11 @@ body
       margin-top: 3.5rem
     &__products-container1
       &__product, &__product2
-        height: 50vh
-        row-gap: .5rem
+        height: 40vh
+        row-gap: 1rem
+        justify-content: flex-start
+        &__img
+          height: 75%
         p
           font-size: 1.6rem
           text-align: center
@@ -524,7 +533,592 @@ body
         border-bottom: none
         font-size: 1.3rem
         font-weight: normal
-        text-transform: none
+        text-transform: uppercase
+        color: rgba(0, 0, 0, 0.4)
+  .search-box
+    column-gap: 2rem
+    i:first-of-type
+      font-size: 2.2rem
+      margin-left: 2rem
+    input
+      width: 90%
+      font-size: 2rem
+    button.search-box__close
+      margin: 0 2rem 0 auto
+      i
+        font-size: 2rem
+.container aside.shop-aside-categories-mobile ul li.open-list
+  flex-basis: 32%
+.container aside.shop-aside-categories-mobile ul li ul.show-items
+  visibility: visible
+  opacity: 1
+.rotate-first-line
+  transform: rotate(450deg)
+.rotate-second-line
+  transform: rotate(360deg)
+
+@media all and (min-width: 481px) and (max-width: 768px)
+  header
+    left: 0
+    width: 100%
+    .header__logo
+      flex-basis: 20%
+      height: 70%
+    .header__right-content
+      display: none
+    nav
+      display: none
+  .container__hamburger
+    &__button
+      height: 2rem
+      width: 2rem
+    &__button.open .line.first
+      transform: rotate(45deg) translateX(.26rem)
+    &__button.open .line.third
+      transform: rotate(-45deg) translateX(.26rem)
+  .section-main
+    justify-content: flex-end
+    row-gap: 1rem
+    & > *
+      margin-left: auto
+      margin-right: auto
+    h2
+      font-size: 5rem
+      text-align: center
+    h3
+      font-size: 3rem
+    &__button
+      height: 6.5rem
+      width: 22rem
+      margin: 1rem auto 5rem auto
+      font-size: 1.9rem
+  .container__section-three.section-main
+    & > *
+      margin-left: auto
+      h2
+        font-size: 2.8rem
+      h3
+        font-size: 1.6rem
+      button
+        margin-bottom: 5rem
+  .container__section-two.section-main
+    background-image: linear-gradient(rgba(4,9,30,.35)),url('../img/480w/mainBg2w400h1000.jpg')
+  footer
+    height: 12vh
+    ul
+      width: 100%
+      height: 80%
+      display: flex
+      align-items: center
+      justify-content: space-evenly
+      justify-items: center
+      padding: 0 2rem
+      flex-wrap: wrap
+      li:first-child
+        flex-basis: 100%
+      li
+        flex-basis: 20%
+        a
+          font-size: 1.4rem
+  .container aside:first-of-type
+    display: none
+  .container .mobile-menu
+    width: 50%
+    transform: translateX(100%)
+    ul
+      font-size: 2rem
+      li
+        a
+          padding: 1.75rem 0
+  .mars__container__section-one
+    justify-content: center
+    row-gap: 1rem
+    h1
+      font-size: 7rem
+    h2
+      font-size: 3.85rem
+      width: 80%
+  .mars__container__section-two
+    background-image: linear-gradient(rgba(0,0,0,.45)),url('../img/1920x1080/marsBg2.jpg')
+    align-items: center
+    justify-content: flex-start
+    &__content-container
+      position: absolute
+      top: 13%
+      left: 50%
+      transform: translateX(-50%)
+      width: 65%
+      align-items: center
+      row-gap: 2rem
+      > p
+        font-size: 2.2rem
+        line-height: 3.8rem
+        text-align: justify
+      h2
+        font-size: 5rem
+        margin-top: 0
+        width: 100%
+        text-align: center
+      &__parameters
+        div
+          p
+            font-size: 2.2rem
+            line-height: 3.8rem
+  .mars__container__section-three
+    height: 50vh
+    justify-content: flex-start
+    overflow: hidden
+    h3
+      font-size: 4rem
+      text-align: center
+    &__date-container
+      width: 90%
+      flex-wrap: wrap
+      div
+        flex-basis: 33%
+        span:first-child
+          font-size: 6rem
+        span:last-child
+          font-size: 3rem
+  .mars__container__section-four
+    row-gap: 2.7rem
+    justify-content: flex-start
+    h2
+      font-size: 6rem
+    h3
+      font-size: 3rem
+    video
+      left: -80%
+      filter: brightness(50%)
+    p
+      width: 90%
+      font-size: 2.2rem
+      line-height: 3.7rem
+    button
+      height: 8rem
+      width: 35rem
+      font-size: 1.8rem
+  .news__container__section-one
+    align-items: center
+    h1
+      font-size: 5.5rem
+      line-height: 7rem
+      width: 90%
+  .news__container__section-two
+    row-gap: 4rem
+    padding-bottom: 4rem
+    h2
+      margin-top: 4rem
+    &__news-container
+      width: 90%
+      &__news
+        flex-basis: 100%
+        &__img
+          height: 40rem
+          width: 100%
+        p:first-of-type
+          width: 90%
+          span
+            width: 5%
+        h3
+          font-size: 3rem
+          width: 90%
+        p:nth-of-type(2)
+          width: 90%
+          font-size: 2.1rem
+          line-height: 3.4rem
+          letter-spacing: .04rem
+          margin-bottom: 3rem
+      &__archive-button
+
+        height: 7.5rem
+        width: 25rem
+        font-size: 1.8rem
+  .news__container__section-three
+    height: 45vh
+    &__subscribe-container
+      width: 60%
+      height: 100%
+      > p
+        font-size: 2.2rem
+      form
+        width: 90%
+        input:first-child
+          height: 4.5rem
+          width: 90%
+          font-size: 2rem
+        p
+          font-size: 1.8rem
+          line-height: 2.5rem
+          margin-top: -.4rem
+          width: 85%
+          font-style: italic
+  .careers__container__section-one
+    row-gap: 2rem
+    justify-content: center
+    h1
+      width: 90%
+      font-size: 4.5rem
+      line-height: 6rem
+      margin-top: 0
+    p
+      font-size: 2rem
+      line-height: 3.4rem
+      width: 90%
+    &__buttons-container
+      width: 90%
+      &__button
+        height: 7rem
+        font-size: 1.8rem
+  .careers__container__section-two
+    height: auto
+    row-gap: 2rem
+    justify-content: flex-start
+    padding: 3rem 0
+    h2
+      font-size: 4rem
+      text-align: center
+      width: 90%
+    p
+      font-size: 2.1rem
+      line-height: 3.4rem
+      width: 90%
+      text-align: justify
+      text-align-last: center
+      text-transform: none
+  .careers__container__section-three
+    padding-top: 4rem
+    row-gap: 2rem
+    & > p
+      font-size: 2rem
+    & > h3
+      font-size: 3.5rem
+      width: 90%
+      text-align: center
+      margin-bottom: 3rem
+    &__facilities-container
+      width: 90%
+      flex-direction: column
+      align-items: center
+      row-gap: 3rem
+      margin-bottom: 6rem
+      &__facility
+        width: 100%
+        &__img
+          height: 39rem
+        h3
+          font-size: 3.5rem
+        p
+          font-size: 2rem
+          line-height: 3rem
+          text-align: justify
+  .careers__container__section-four
+    height: auto
+    flex-direction: column
+    &__img
+      flex-basis: 90vw
+      width: 90vw
+    &__container
+      min-height: 46vw
+      flex-direction: column
+      justify-content: flex-start
+      row-gap: 2rem
+      align-items: center
+      flex-basis: 50%
+      width: 90%
+      &__button-container
+        margin-top: auto
+        button
+          padding: 2rem
+          i
+            font-size: 1.8rem
+      h3
+        width: 100%
+        font-size: 3rem
+        line-height: 4.2rem
+        text-align: center
+      p
+        width: 100%
+        font-size: 2rem
+        text-align: center
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        align-items: center
+        row-gap: 2rem
+        span:first-child
+          width: 100%
+          height: .2rem
+          opacity: .7
+          margin-bottom: .5rem
+          margin-top: -1rem
+        span:nth-of-type(3), span:nth-of-type(5)
+          display: none
+  .careers__container__section-five
+    height: auto
+    row-gap: 2.5rem
+    padding: 5rem 0
+    justify-content: flex-start
+    margin-top: -.1rem
+    p:first-of-type
+      font-size: 1.8rem
+    h3
+      font-size: 3.5rem
+      width: 90%
+      text-align: center
+    p:nth-of-type(2)
+      font-size: 2rem
+      line-height: 3.2rem
+      width: 90%
+    > button
+      width: 60%
+      font-size: 1.6rem
+  .about-us__container__section-one
+    justify-content: center
+    row-gap: 3rem
+    h1
+      font-size: 5.5rem
+      width: 90%
+      text-align: center
+    > p
+      font-size: 2.4rem
+      line-height: 3.6rem
+      text-align: center
+      width: 90%
+    &__play-container
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      row-gap: 1.5rem
+      width: 90%
+      p
+        font-size: 2rem
+  .about-us-video
+    width: 100vw
+    height: 56.25vw
+  .about-us__container__section-two
+    row-gap: 0
+    &__article
+      position: relative
+      flex-direction: column
+      height: 70vh
+      background-color: #111
+      &__img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+      &__text-container
+        align-items: center
+        row-gap: 2rem
+        width: 90%
+        z-index: 1
+        p:first-of-type
+          font-size: 1.8rem
+          margin-top: 5rem
+          color: #ccc
+        h2
+          font-size: 4rem
+          width: 100%
+          text-align: center
+        p:nth-of-type(2)
+          width: 90%
+          font-size: 2.2rem
+          line-height: 3.5rem
+          margin-bottom: 0
+  .about-us1img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg1.jpg')
+  .about-us2img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg2.jpg')
+  .about-us3img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg3.jpg')
+  .about-us4img
+    background-image: linear-gradient(rgba(0,0,0,.5)), url('../img/aboutusimg4.jpg')
+
+  .about-us__container__section-three
+    position: relative
+    +flex-column-center
+    row-gap: 5rem
+    h3
+      font-size: 5rem
+      span
+        height: .5rem
+  .contact__container__section-one
+    height: 105vh
+    row-gap: 3rem
+    h1
+      font-size: 4rem
+      line-height: 5.8rem
+      width: 90%
+    > p
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      row-gap: 1rem
+      text-align: center
+      font-size: 3.5rem
+      span.copy
+        top: 25%
+        left: 75%
+        margin-left: 2rem
+    form
+      width: 60%
+      margin: 1rem 0 4rem 0
+      label
+        font-size: 2rem
+        i
+          font-size: .6rem
+      input, textarea
+        font-size: 2rem
+  .header-shop
+    padding-left: 0
+    column-gap: 0
+    justify-content: flex-start
+    .header-shop__logo
+      width: 9%
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+    .header-shop__right-content, nav
+      display: none
+    .header-shop__right-content-mobile
+      +flex-row-center
+      flex-basis: 15%
+      margin-left: auto
+      margin-right: 1rem
+      a
+        text-decoration: none
+        color: #fff
+        +flex-row-center
+        -webkit-tap-highlight-color: transparent
+        i
+          font-size: 2.4rem
+          +flex-row-center
+          padding: 0 .7rem
+    .header-shop__humburger-left-mobile
+      margin-right: auto
+      +flex-row-center
+      flex-basis: 15%
+      -webkit-tap-highlight-color: transparent
+  .shop__container__section-one
+    justify-content: center
+    height: 50vh
+    h2
+      margin-top: 3rem
+      font-size: 5rem
+      text-align: center
+  .shop__container__section-two
+    justify-content: flex-start
+    align-items: center
+    row-gap: 3rem
+    h3
+      font-size: 2.6rem
+      margin-top: 4rem
+    &__products-container1
+      &__product, &__product2
+        height: 40vh
+        row-gap: 1rem
+        justify-content: flex-start
+        &__img
+          height: 75%
+        p
+          font-size: 2rem
+          text-align: center
+    &__products-container2
+      width: 90%
+      flex-direction: column
+      align-items: center
+      row-gap: 2rem
+      &__product
+        flex-grow: 1
+        width: 100%
+      div:last-child
+        margin-bottom: 2rem
+  .container aside.shop-aside-categories-mobile
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    transform: translateX(-100%)
+    height: 100vh
+    width: 80%
+    background-color: #fff
+    z-index: 3
+    button.shop-aside-categories-mobile__close-button
+      position: absolute
+      top: 3%
+      left: 5%
+      background-color: transparent
+      border: none
+      cursor: pointer
+      i
+        font-size: 2.5rem
+        color: rgba(0, 0,0 , 0.4)
+    ul
+      flex-basis: 80%
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      width: 90%
+      margin-top: 8rem
+      li
+        position: relative
+        width: 100%
+        margin: 1rem 0
+        flex-basis: 8%
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        flex-wrap: wrap
+        border-bottom: .1rem solid rgba(0, 0,0 , 0.15)
+        color: rgba(0, 0,0 , 0.75)
+        letter-spacing: .15rem
+        font-weight: bold
+        transition: all .2s ease
+        font-size: 2rem
+        .close-container
+          .first-line,.second-line
+            position: absolute
+            top: 0
+            right: 2%
+            height: 1.2rem
+            width: .2rem
+            transform-origin: 50% 50%
+            background-color: #222
+            transition: transform .3s ease
+          .second-line
+            transform: rotate(90deg)
+        ul
+          visibility: hidden
+          opacity: 0
+          position: absolute
+          top: 2.5rem
+          left: 0
+          display: flex
+          flex-direction: column
+          justify-content: flex-start
+          align-items: flex-start
+          flex-basis: 80%
+          margin-top: 0
+          margin-left: 2rem
+          transition: all .2s ease
+          li
+            font-size: 1.8rem
+            color: rgba(0, 0, 0, 0.4)
+            border-bottom: none
+            padding: 1rem 0
+            margin: .5rem 0
+      li:last-child
+        border-bottom: none
+        font-size: 1.8rem
+        font-weight: normal
+        text-transform: uppercase
         color: rgba(0, 0, 0, 0.4)
   .search-box
     column-gap: 2rem

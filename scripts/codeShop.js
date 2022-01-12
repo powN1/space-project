@@ -16,7 +16,6 @@ const categoriesListCloseButtons = document.querySelectorAll('[data-mobile-categ
 const categoriesCloseButton = document.querySelector('[data-aside-shop-mobile-close-button]');
 
 let activeCategory = null;
-
 let searchBoxVisible = false;
 menuPositions.forEach((position, index) => {
   position.addEventListener('mouseenter', function(e) {
@@ -96,8 +95,8 @@ categoriesListElements.forEach(element => {
       category.querySelector('ul').classList.remove('show-items');
       category.querySelector('.close-container').querySelector('.first-line').classList.remove('rotate-first-line');
       category.querySelector('.close-container').querySelector('.second-line').classList.remove('rotate-second-line');
-    })
-
+    });
+    
     this.classList.toggle('open-list');
     this.querySelector('ul').classList.toggle('show-items');
     this.querySelector('.first-line').classList.toggle('rotate-first-line');
