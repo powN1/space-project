@@ -1,0 +1,104 @@
+const http = require('http');
+const hostname = 'localhost';
+const port = 3000;
+
+const mySite = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Space Continuum</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="header__logo" href="index.html"></a>
+      <nav>
+        <ul class="nav__list">
+          <li class="nav__list__element"><a href="mars.html">Mars 2026</a></li>
+          <li class="nav__list__element"><a href="news.html">News</a></li>
+          <li class="nav__list__element"><a href="careers.html">Careers</a></li>
+          <li class="nav__list__element"><a href="about-us.html">About us</a></li>
+          <li class="nav__list__element"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__right-content">
+        <div class="header__right-content__shop"><a href="shop.html">Shop</a></div>
+      </div>
+    </header>
+    <div class="container__hamburger">
+      <button class="container__hamburger__button" data-hamburger-button>
+        <span class="line first"></span>
+        <span class="line second"></span>
+        <span class="line third"></span>
+      </button>
+    </div>
+    <aside data-aside-menu>
+      <ul>
+        <li><a href="mars.html">Missions</a></li>
+        <li><a href="news.html">Updates</a></li>
+        <li><a href="contact.html">Suggestions</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </aside>
+    <aside class="mobile-menu" data-aside-menu-mobile>
+      <ul>
+        <li><a href="mars.html">Mars 2026</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="about-us.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="mars.html">Missions</a></li>
+        <li><a href="news.html">Updates</a></li>
+        <li><a href="contact.html">Suggestions</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </aside>
+    <section class="container__section-one section-main" data-section-one>
+      <h3>Recent space mission</h3>
+      <h2>TLS 24-H mission</h2>
+      <button class="section-main__button">re-watch</button>
+    </section>
+    <section class="container__section-three section-main"  data-section-three>
+      <h3>Recent launch</h3>
+      <h2>Eagle 6 self landing test</h2>
+      <button class="section-main__button">re-watch</button>
+    </section>
+    <section class="container__section-two section-main"  data-section-two>
+      <h3>Recent launch</h3>
+      <h2>Asteroid collision test</h2>
+      <button class="section-main__button">re-watch</button>
+    </section>
+    
+    <footer>
+      <ul>
+        <li><a href="index.html">Space continuum 2022</a></li>
+        <li><a href="http://facebook.com">facebook</a></li>
+        <li><a href="http://twitter.com">twitter</a></li>
+        <li><a href="http://instagram.com">instagram</a></li>
+        <li><a href="http://linkedin.com">linkedin</a></li>
+        <li><a href="#">privacy policy</a></li>
+      </ul>
+    </footer>
+    <div class="modal hide" data-modal></div>
+  </div>
+  <script src="../scripts/code.js"></script>
+</body>
+</html>
+`
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end(mySite);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

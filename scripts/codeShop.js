@@ -17,6 +17,8 @@ const categoriesCloseButton = document.querySelector('[data-aside-shop-mobile-cl
 
 let activeCategory = null;
 let searchBoxVisible = false;
+
+
 menuPositions.forEach((position, index) => {
   position.addEventListener('mouseenter', function(e) {
     menuPositionsUl.forEach(ul => {
@@ -34,7 +36,7 @@ menuPositions.forEach((position, index) => {
     
   })
   menuBigUl.addEventListener('mouseleave', function() {
-    //Everytime a user leaves navigation the lists dissapear.
+    //Everytime a user leaves navigation lists dissapear.
     menuPositionsUl.forEach(ul => {
       ul.style.opacity = '0';
       ul.style.visibility = 'hidden';
@@ -47,13 +49,16 @@ menuPositions.forEach((position, index) => {
 })
 
 window.addEventListener('scroll', function() {
+  // Keeps modal position always up to date
   modal.style.top = `${window.scrollY}px`
+  // Opens and closes the menu
   if(btnHamburger.classList.contains('open')) {
     btnHamburger.classList.toggle('open');
     asideMenuMobile.classList.toggle('slide');
     modal.classList.toggle('hide');
   }
   if(searchBoxVisible) {
+    // If user scrolls while the search box is open then the box closes
     searchBoxVisible = !searchBoxVisible
     searchBox.style.top = '0'
     modal.classList.toggle('hide');
@@ -83,6 +88,7 @@ searchButtonMobile.addEventListener('click', toggleSearchBox);
 searchCloseButton.addEventListener('click', function() {
   searchBox.style.top = '0'
   modal.classList.add('hide');
+  searchBox.querySelector('input').value = '';
   searchBoxVisible = !searchBoxVisible;
 })
 
