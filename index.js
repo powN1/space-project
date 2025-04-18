@@ -21,7 +21,7 @@ const mySite = `
       <a class="header__logo" href="index.html"></a>
       <nav>
         <ul class="nav__list">
-          <li class="nav__list__element"><a href="mars.html">Mars 2026</a></li>
+          <li class="nav__list__element"><a href="mars.html">Mars 2030</a></li>
           <li class="nav__list__element"><a href="news.html">News</a></li>
           <li class="nav__list__element"><a href="careers.html">Careers</a></li>
           <li class="nav__list__element"><a href="about-us.html">About us</a></li>
@@ -49,7 +49,7 @@ const mySite = `
     </aside>
     <aside class="mobile-menu" data-aside-menu-mobile>
       <ul>
-        <li><a href="mars.html">Mars 2026</a></li>
+        <li><a href="mars.html">Mars 2030</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="careers.html">Careers</a></li>
         <li><a href="about-us.html">About us</a></li>

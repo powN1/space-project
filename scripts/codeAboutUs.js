@@ -34,7 +34,7 @@ const changeBackground = function() {
   intervalID = setInterval(()=> {
     if(imageNumber >= 3) imageNumber = 0;
     if(imageNumber === 0) {
-      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url(../img/1920x1080/aboutusbg2launch.jpg)';
+      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.1))), url(../img/1920x1080/aboutUsBg2Launch.jpg)';
       headingLaunch.style.opacity = '1';
       headingLand.style.opacity = '.3';
       headingRepeat.style.opacity = '.3';
@@ -48,7 +48,7 @@ const changeBackground = function() {
       headingLaunch.style.opacity = '.3';
       headingRepeat.style.opacity = '.3';
     } else if (imageNumber === 2) {
-      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2))), url(../img/1920x1080/aboutusbg3repeat.jpg)';
+      backgroundDiv.style.backgroundImage = '-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0, 0, 0, 0.2))), url(../img/1920x1080/aboutUsBg3Repeat.jpg)';
       headingRepeat.style.opacity = '1';
       headingLaunch.style.opacity = '.3';
       headingLand.style.opacity = '.3';
