@@ -14,7 +14,7 @@ const spanHours = document.querySelector('.mars__container__section-three__hours
 const spanMinutes = document.querySelector('.mars__container__section-three__minutes');
 const spanSeconds = document.querySelector('.mars__container__section-three__seconds');
 
-let missionDate = new Date('2026-06-26 10:00:00').getTime();
+let missionDate = new Date('2030-06-26 10:00:00').getTime();
 
 const updateDate = function() {
   // Countdown timer

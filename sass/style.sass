@@ -34,6 +34,16 @@ body
 @import 'footer'
 @import 'modal'
 
+.container aside.shop-aside-categories-mobile ul li.open-list
+  flex-basis: 32%
+.container aside.shop-aside-categories-mobile ul li ul.show-items
+  visibility: visible
+  opacity: 1
+.rotate-first-line
+  transform: rotate(450deg)
+.rotate-second-line
+  transform: rotate(360deg)
+
 @media all and (max-width: 480px)
   header
     left: 0
@@ -547,15 +557,6 @@ body
       margin: 0 2rem 0 auto
       i
         font-size: 2rem
-.container aside.shop-aside-categories-mobile ul li.open-list
-  flex-basis: 32%
-.container aside.shop-aside-categories-mobile ul li ul.show-items
-  visibility: visible
-  opacity: 1
-.rotate-first-line
-  transform: rotate(450deg)
-.rotate-second-line
-  transform: rotate(360deg)
 
 @media all and (min-width: 481px) and (max-width: 768px)
   header

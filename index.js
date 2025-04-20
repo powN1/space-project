@@ -43,7 +43,6 @@ const mySite = `
       <ul>
         <li><a href="mars.html">Missions</a></li>
         <li><a href="news.html">Updates</a></li>
-        <li><a href="contact.html">Suggestions</a></li>
         <li><a href="shop.html">Shop</a></li>
       </ul>
     </aside>
@@ -56,7 +55,6 @@ const mySite = `
         <li><a href="contact.html">Contact</a></li>
         <li><a href="mars.html">Missions</a></li>
         <li><a href="news.html">Updates</a></li>
-        <li><a href="contact.html">Suggestions</a></li>
         <li><a href="shop.html">Shop</a></li>
       </ul>
     </aside>
@@ -78,7 +76,7 @@ const mySite = `
     
     <footer>
       <ul>
-        <li><a href="index.html">Space continuum 2022</a></li>
+        <li><a href="index.html">Space continuum 2026</a></li>
         <li><a href="http://facebook.com">facebook</a></li>
         <li><a href="http://twitter.com">twitter</a></li>
         <li><a href="http://instagram.com">instagram</a></li>
