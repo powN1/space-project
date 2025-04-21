@@ -416,7 +416,7 @@ header .header__right-content a:focus:after {
 }
 
 .container__section-one.section-main {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg1.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.15), rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg1.jpg");
 }
 .container__section-one.section-main h3 {
   animation: text-animation 1.25s ease;
@@ -429,7 +429,7 @@ header .header__right-content a:focus:after {
 }
 
 .container__section-two.section-main {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg2.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.15), rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg2.jpg");
 }
 .container__section-two.section-main h3 {
   opacity: 0;
@@ -442,7 +442,7 @@ header .header__right-content a:focus:after {
 }
 
 .container__section-three.section-main {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg3.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.15), rgba(4, 9, 30, 0.15)), url("../img/1920x1080/mainBg3.jpg");
 }
 .container__section-three.section-main h3 {
   opacity: 0;
@@ -465,7 +465,7 @@ header .header__right-content a:focus:after {
  * Mars page selectors (2nd page)
  * ============================ */
 .mars__container__section-one {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.25)), url("../img/1920x1080/marsBg1.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.25), rgba(4, 9, 30, 0.25)), url("../img/1920x1080/marsBg1.jpg");
   align-items: center;
   row-gap: 2rem;
 }
@@ -483,7 +483,7 @@ header .header__right-content a:focus:after {
 }
 
 .mars__container__section-two {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url("../img/1920x1080/marsBg2.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.1), rgba(4, 9, 30, 0.1)), url("../img/1920x1080/marsBg2.jpg");
   position: relative;
   justify-content: flex-start;
 }
@@ -636,7 +636,7 @@ header .header__right-content a:focus:after {
 .news__container__section-one {
   position: relative;
   height: 60vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/1920x1080/newsBg1.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/1920x1080/newsBg1.jpg");
   background-position: top;
   background-color: #000;
   display: flex;
@@ -956,7 +956,7 @@ header .header__right-content a:focus:after {
  * Careers page selectors (4th page)
  * ============================ */
 .careers__container__section-one {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45)), url("../img/1920x1080/careersBg1.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url("../img/1920x1080/careersBg1.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1298,7 +1298,7 @@ header .header__right-content a:focus:after {
   justify-content: center;
   align-items: flex-start;
   row-gap: 3rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/1920x1080/aboutUsBg1.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url("../img/1920x1080/aboutUsBg1.jpg");
 }
 .about-us__container__section-one > * {
   margin: 0;
@@ -1489,7 +1489,7 @@ header .header__right-content a:focus:after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1)), url("../img/1920x1080/aboutUsBg4Static.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url("../img/1920x1080/aboutUsBg4Static.jpg");
   animation: background-change 15s linear infinite;
 }
 .about-us__container__section-three > * {
@@ -1585,7 +1585,7 @@ header .header__right-content a:focus:after {
  * Contact page selectors (6th page)
  * ============================ */
 .contact__container__section-one {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("../img/contact1.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url("../img/contact1.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1751,7 +1751,7 @@ header .header__right-content a:focus:after {
 
 .shop__container__section-one {
   height: 75vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25)), url("../img/shopbg.jpg");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.25), rgba(4, 9, 30, 0.25)), url("../img/shopbg.jpg");
   align-items: center;
 }
 .shop__container__section-one > * {
@@ -1925,13 +1925,13 @@ header .header__right-content a:focus:after {
   color: #fff;
 }
 .shop__container__section-two__products-container2__product .img-bottom-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/shopTshirt.png");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url("../img/shopTshirt.png");
 }
 .shop__container__section-two__products-container2__product .img-bottom-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/shopTshirt2.png");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url("../img/shopTshirt2.png");
 }
 .shop__container__section-two__products-container2__product .img-bottom-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/shopBag.png");
+  background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url("../img/shopBag.png");
 }
 
 @keyframes text-animation {
@@ -2153,7 +2153,7 @@ footer div p {
     font-size: 1.5rem;
   }
   .container__section-two.section-main {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.35)), url("../img/480w/mainBg2w400h1000.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.35), rgba(4, 9, 30, 0.35)), url("../img/480w/mainBg2w400h1000.jpg");
   }
   .container__section-three.section-main > * {
     margin-left: auto;
@@ -2221,7 +2221,7 @@ footer div p {
     text-align: center;
   }
   .mars__container__section-two {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35)), url("../img/1920x1080/marsBg2.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.35), rgba(4, 9, 30, 0.35)), url("../img/1920x1080/marsBg2.jpg");
     align-items: center;
     justify-content: flex-start;
   }
@@ -2514,16 +2514,16 @@ footer div p {
     margin-bottom: 0;
   }
   .about-us1img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg1.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/aboutusimg1.jpg");
   }
   .about-us2img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg2.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/aboutusimg2.jpg");
   }
   .about-us3img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/aboutusimg3.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../img/aboutusimg3.jpg");
   }
   .about-us4img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg4.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/aboutusimg4.jpg");
   }
   .about-us__container__section-three {
     position: relative;
@@ -2831,13 +2831,13 @@ footer div p {
     font-size: 1.9rem;
   }
   .container__section-three.section-main {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5)), url("../img/1920x1080/mainBg3.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/1920x1080/mainBg3.jpg");
   }
   .container__section-three.section-main > * {
     margin-left: auto;
   }
   .container__section-two.section-main {
-    background-image: linear-gradient(rgba(4, 9, 30, 0.4)), url("../img/480w/mainBg2w400h1000.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url("../img/480w/mainBg2w400h1000.jpg");
   }
   footer {
     height: 12vh;
@@ -2887,7 +2887,7 @@ footer div p {
     width: 80%;
   }
   .mars__container__section-two {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/1920x1080/marsBg2.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/1920x1080/marsBg2.jpg");
     align-items: center;
     justify-content: flex-start;
     height: 150vh;
@@ -3253,16 +3253,16 @@ footer div p {
     margin-bottom: 0;
   }
   .about-us1img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg1.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/aboutusimg1.jpg");
   }
   .about-us2img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg2.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/aboutusimg2.jpg");
   }
   .about-us3img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg3.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/aboutusimg3.jpg");
   }
   .about-us4img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../img/aboutusimg4.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../img/aboutusimg4.jpg");
   }
   .about-us__container__section-three {
     position: relative;
@@ -3613,7 +3613,7 @@ footer div p {
     width: 80%;
   }
   .mars__container__section-two {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45)), url("../img/1920x1080/marsBg2.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url("../img/1920x1080/marsBg2.jpg");
     align-items: center;
     justify-content: flex-start;
     height: 120vh;
@@ -4303,7 +4303,7 @@ footer div p {
     width: 90%;
   }
   .mars__container__section-two {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45)), url("../img/1920x1080/marsBg2.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url("../img/1920x1080/marsBg2.jpg");
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
@@ -5037,7 +5037,7 @@ footer div p {
     width: 90%;
   }
   .mars__container__section-two {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45)), url("../img/1920x1080/marsBg2.jpg");
+    background-image: linear-gradient(to bottom, rgba(4, 9, 30, 0.45), rgba(4, 9, 30, 0.45)), url("../img/1920x1080/marsBg2.jpg");
     align-items: center;
     justify-content: flex-start;
     height: 130vh;
